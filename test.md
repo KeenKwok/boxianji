@@ -7,7 +7,7 @@
 # **艺术节、赛事与学术动态**
 
 ### 第59届塔雷加国际吉他比赛（LIX Certamen Internacional de Guitarra Francisco Tárrega）在西班牙开赛
-![[Pasted image 20260831094402.jpg]]
+![[Pasted image IMG_3111.jpeg]]
 
 - 第59届弗朗西斯科·塔雷加国际吉他比赛于8月27日在西班牙贝尼卡西姆（Benicàssim）正式开赛。本届共有来自10个国家的19名35岁以下青年选手入围，预选赛于8月28日至29日举行，半决赛安排在8月31日至9月2日，决赛将于9月4日晚在市立剧院举行。
 

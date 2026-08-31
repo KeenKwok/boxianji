@@ -9,7 +9,7 @@ title: 首页
 
 ---
 
-![](../images/weekly/cover.JPG)
+![](images/weekly/cover.JPG)
 
 ## 弹拨乐一周简报
 

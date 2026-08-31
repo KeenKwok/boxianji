@@ -18,8 +18,13 @@ title: 首页
 ### 最新一期
 
 {% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "path" | reverse %}
+{% assign latest_post = weekly_posts | first %}
 
-{% for post in weekly_posts %}
+- [{{ latest_post.title }}]({{ site.baseurl }}/{{ latest_post.path }})
+
+### 往期简报
+
+{% for post in weekly_posts offset:1 %}
 - [{{ post.title }}]({{ site.baseurl }}/{{ post.path }})
 {% endfor %}
 

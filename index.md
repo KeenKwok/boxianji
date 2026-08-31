@@ -17,16 +17,8 @@ title: 首页
 
 ### 最新一期
 
-- [弹拨乐一周简报（2026.08.23—08.29）](weekly/2026-08-29.md)
+{% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "date" | reverse %}
 
----
-
-## 关于拨弦记
-
-拨弦记，关注古典吉他、中国民族弹拨乐器及世界各地弹拨乐文化。
-
-这里记录新闻，也记录音乐、人物、乐器与正在发生的现场。
-
----
-
-*拨弦记｜记录弦上世界*
+{% for post in weekly_posts %}
+- [{{ post.title }}]({{ site.baseurl }}/{{ post.path }})
+{% endfor %}

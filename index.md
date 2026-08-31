@@ -17,7 +17,7 @@ title: 首页
 
 ### 最新一期
 
-{% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "date" | reverse %}
+{% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "path" | reverse %}
 
 {% for post in weekly_posts %}
 - [{{ post.title }}]({{ site.baseurl }}/{{ post.path }})

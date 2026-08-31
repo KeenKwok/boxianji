@@ -47,7 +47,7 @@
 
 # **乐器制作、非遗与文化动态**
 
-### Guitar Center推出2026“Crossroads Guitar Collection”![[IMG_3087.webp]]
+### Guitar Center推出2026“Crossroads Guitar Collection”![](IMG_3112.jpeg)
 
 - 美国乐器零售商Guitar Center于8月27日公布2026年度“Crossroads Guitar Collection”。系列包括多款限量吉他，其中Martin Custom Shop 000-42 Eric Clapton Brazilian全球限量5把，售价24999.99美元。
 
@@ -75,7 +75,7 @@
 
 # **音乐会、展会展演与乐团动态**
 
-### 王健与约兰·索舍尔（Göran Söllscher）9月上海首度中国内地同台【预告】![[IMG_3050 1.jpeg]]
+### 王健与约兰·索舍尔（Göran Söllscher）9月上海首度中国内地同台【预告】![](IMG_3050.jpeg)
 
 - 大提琴家王健与瑞典吉他大师约兰·索舍尔将于9月26日在上海东方艺术中心首度中国内地同台。两人将重现2007年DG专辑《Reverie》的部分曲目，并演奏舒伯特《阿佩乔尼奏鸣曲》以及皮亚佐拉等作品。
 
@@ -102,7 +102,6 @@
 # **人物资讯**
 
 ### 韩国摇滚吉他手崔具熙（Choi Gu-hee）去世
-![[IMG_3088.webp]]
 
 - 韩国经典摇滚乐队野菊花（Deulkukhwa）吉他手崔具熙于8月25日去世，享年67岁。他曾长期活跃于韩国1980年代摇滚音乐场景，野菊花被视为韩国流行音乐史上具有重要影响力的乐队之一。
 
@@ -115,5 +114,5 @@
 # **本周值得一听（Editor's Pick）**
 
 ### 《Reverie》（2007）——王健（Jian Wang）× 约兰·索舍尔（Göran Söllscher）
-
+![](IMG_3092.jpeg)
 - 在两人即将于9月26日上海同台之际，可以重温二人2007年合作的DG专辑《Reverie》。专辑收录皮亚佐拉、法雅等作品，也为即将举行的上海演出提供了很好的聆听入口。

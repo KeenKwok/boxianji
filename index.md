@@ -26,7 +26,9 @@ title: 首页
 ### 往期简报
 
 {% for post in weekly_posts offset:1 %}
+{% if post.title and post.url %}
 - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+{% endif %}
 {% endfor %}
 
 ---

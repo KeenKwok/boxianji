@@ -1,10 +1,9 @@
 ---
 layout: default
 title: 近期值得关注
----
 
 events:
-  - date: "9月27日"
+  - - date: "9月27日"
     city: "上海"
     title: "约兰·索舍尔（Göran Söllscher）独奏音乐会"
     link: "公众号链接"

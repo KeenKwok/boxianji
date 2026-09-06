@@ -1,1 +1,19 @@
+---
+layout: default
+title: 周报归档
+---
 
+# 周报归档
+
+> 收录《拨弦记》历期《弹拨乐一周简报》，持续记录世界弹拨乐领域的重要资讯。
+
+{% assign reports = site.pages | where_exp:"p","p.path contains 'weekly/'" | sort:"path" | reverse %}
+
+{% for report in reports %}
+{% unless report.path == "weekly/index.md" %}
+<div style="margin:1em 0;">
+  <strong>{{ report.title }}</strong><br>
+  <small><a href="{{ report.url }}">阅读全文 ↗</a></small>
+</div>
+{% endunless %}
+{% endfor %}

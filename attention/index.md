@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 近期值得关注
+---
 
 events:
   - date: "9月27日"

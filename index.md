@@ -19,7 +19,7 @@ title: 首页
 
 ### 最新一期
 
-{% for post in weekly_posts %}
+{% for post in weekly_posts limit:4 %}
   {% unless post.path == "weekly/index.md" %}
 - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
     {% break %}

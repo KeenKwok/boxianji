@@ -39,20 +39,17 @@ title: 首页
 
 {% if attention and attention.events %}
   {% for event in attention.events limit:3 %}
-**🎫 {{ event.date }}｜{{ event.city }}**
-
-**{{ event.title }}**
-
-[查看演出海报（公众号）]({{ event.link }})
-
----
-
+<div style="margin: 0.8em 0;">
+  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong><br>
+  {{ event.title }}<br>
+  <small><a href="{{ event.link }}">查看详情</a></small>
+</div>
   {% endfor %}
 {% else %}
 > 暂无近期演出资讯。
 {% endif %}
 
-→ [查看全部近期值得关注](attention/)
+<p><a href="attention/">查看全部近期值得关注 →</a></p>
 
 ---
 

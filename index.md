@@ -15,7 +15,6 @@ title: 首页
 
 记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
 
-
 {% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/' and page.path != 'weekly/index.md'" | sort: "path" | reverse %}
 {% assign latest_post = weekly_posts | first %}
 

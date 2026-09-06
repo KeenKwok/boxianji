@@ -31,6 +31,8 @@ title: 首页
 {% endif %}
 {% endfor %}
 
+→ [查看全部周报](weekly/)
+
 ---
 
 ## 近期值得关注

@@ -35,21 +35,15 @@ title: 首页
 
 ## 近期值得关注
 
-{% assign attention = site.pages | where:"url","/attention/" | first %}
-
-{% if attention and attention.events %}
-  {% for event in attention.events limit:3 %}
-<div style="margin: 0.8em 0;">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong><br>
-  {{ event.title }}<br>
-  <small><a href="{{ event.link }}">查看详情</a></small>
+{% for event in site.data.attention limit:3 %}
+<div style="margin:0.9em 0;">
+<strong>🎫 {{ event.date }}｜{{ event.city }}</strong><br>
+{{ event.title }}<br>
+<small><a href="{{ event.link }}">查看海报 ↗</a></small>
 </div>
-  {% endfor %}
-{% else %}
-> 暂无近期演出资讯。
-{% endif %}
+{% endfor %}
 
-<p><a href="attention/">查看全部近期值得关注 →</a></p>
+→ [查看全部近期值得关注](attention/)
 
 ---
 

@@ -49,7 +49,7 @@ title: 首页
 {% for event in site.data.attention limit:3 %}
 <div style="margin:0.9em 0;">
   <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看海报 ↗</a></small><br>
+  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
   {{ event.title }}
 </div>
 {% endfor %}

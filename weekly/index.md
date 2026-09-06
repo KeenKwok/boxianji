@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 周报归档
+exclude_from_weekly: true
 ---
 
 # 周报归档

@@ -16,18 +16,28 @@ title: 首页
 记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
 
 {% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "path" | reverse %}
-{% assign latest_post = weekly_posts | first %}
 
 ### 最新一期
 
-- [{{ latest_post.title }}]({{ site.baseurl }}{{ latest_post.url }})
+{% for post in weekly_posts %}
+  {% unless post.path == "weekly/index.md" %}
+- [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
+    {% break %}
+  {% endunless %}
+{% endfor %}
 
 ### 往期简报
 
-{% for post in weekly_posts offset:1 %}
-{% if post.title != nil and post.url != nil %}
+{% assign latest_found = false %}
+
+{% for post in weekly_posts %}
+  {% unless post.path == "weekly/index.md" %}
+    {% if latest_found %}
 - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
-{% endif %}
+    {% else %}
+      {% assign latest_found = true %}
+    {% endif %}
+  {% endunless %}
 {% endfor %}
 
 → [查看全部周报](weekly/)

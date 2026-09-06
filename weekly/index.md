@@ -14,7 +14,7 @@ exclude_from_weekly: true
 {% unless report.path == "weekly/index.md" %}
 <div style="margin:1em 0;">
   <strong>{{ report.title }}</strong><br>
-  <small><a href="{{ report.url }}">阅读全文 ↗</a></small>
+  <small><a href="{{ site.baseurl }}{{ report.url }}">阅读全文 ↗</a></small>
 </div>
 {% endunless %}
 {% endfor %}

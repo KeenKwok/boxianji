@@ -33,6 +33,25 @@ title: 首页
 
 ---
 
+## 近期值得关注
+
+{% assign page = site.pages | where:"path","attention/index.md" | first %}
+
+{% for event in page.events limit:3 %}
+🎫 **{{ event.date }}｜{{ event.city }}**
+
+**{{ event.title }}**
+
+[查看演出海报（公众号）]({{ event.link }})
+
+---
+
+{% endfor %}
+
+→ [查看全部近期值得关注](attention/)
+
+---
+
 ## 关于拨弦记
 
 拨弦记，关注各地弹拨乐文化动态。

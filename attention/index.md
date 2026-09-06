@@ -17,6 +17,11 @@ events:
     city: "深圳"
     title: "帕格尼尼冠军之夜"
     link: "https://mp.weixin.qq.com/s/6HDvRmNtwLolhX6OxNyHNw"
+
+  - date: "9月5日"
+    city: "深圳"
+    title: "帕格尼尼冠军之夜"
+    link: "https://mp.weixin.qq.com/s/6HDvRmNtwLolhX6OxNyHNw"
 ---
 
 # 近期值得关注

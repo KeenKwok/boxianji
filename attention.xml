@@ -1,0 +1,33 @@
+---
+layout: null
+permalink: /attention.xml
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>拨弦记｜演出情报</title>
+    <link>{{ site.url }}{{ site.baseurl }}/attention/</link>
+    <description>《拨弦记》持续更新世界弹拨乐近期重要演出。</description>
+    <language>zh-CN</language>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll</generator>
+
+{% for event in site.data.attention %}
+    <item>
+      <title>{{ event.date }}｜{{ event.city }}｜{{ event.title | escape }}</title>
+      <link>{{ event.link }}</link>
+      <guid>{{ event.link }}</guid>
+      <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+      <description><![CDATA[
+<p><strong>{{ event.title }}</strong></p>
+<p>📍 {{ event.city }}</p>
+<p>📅 {{ event.date }}</p>
+<p><a href="{{ event.link }}">查看演出详情 ↗</a></p>
+<p>更多演出：{{ site.url }}{{ site.baseurl }}/attention/</p>
+      ]]></description>
+    </item>
+{% endfor %}
+
+  </channel>
+</rss>

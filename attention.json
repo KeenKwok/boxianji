@@ -1,0 +1,13 @@
+---
+layout: null
+---
+[
+{% for event in site.data.attention %}
+  {
+    "date": "{{ event.date }}",
+    "city": "{{ event.city }}",
+    "title": "{{ event.title | escape }}",
+    "link": "{{ event.link }}"
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

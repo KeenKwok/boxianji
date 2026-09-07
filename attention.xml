@@ -23,7 +23,7 @@ permalink: /attention.xml
 📍 {{ event.city }}<br>
 📅 {{ event.date }}<br><br>
 查看演出详情：{{ event.link }}<br>
-更多演出：{{ site.url }}{{ site.baseurl }}/attention/
+更多演出：https://keenkwok.github.io/boxianji/attention/
       ]]></description>
     </item>
 {% endfor %}

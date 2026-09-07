@@ -1,13 +1,18 @@
 ---
 layout: null
 ---
-[
+{
+  "name": "拨弦记｜近期重要演出",
+  "description": "《拨弦记》近期重要弹拨乐演出数据库",
+  "updated": "{{ site.time | date: '%Y-%m-%d' }}",
+  "events": [
 {% for event in site.data.attention %}
-  {
-    "date": "{{ event.date }}",
-    "city": "{{ event.city }}",
-    "title": "{{ event.title | escape }}",
-    "link": "{{ event.link }}"
-  }{% unless forloop.last %},{% endunless %}
+    {
+      "date": "{{ event.date }}",
+      "city": "{{ event.city | escape }}",
+      "title": "{{ event.title | escape }}",
+      "link": "{{ event.link | escape }}"
+    }{% unless forloop.last %},{% endunless %}
 {% endfor %}
-]
+  ]
+}

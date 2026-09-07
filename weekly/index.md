@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 拨弦记|周报归档
+title: 拨弦记｜周报归档
 exclude_from_weekly: true
 ---
 
-# 拨弦记|周报归档
+# 拨弦记｜周报归档
 
 > 收录《拨弦记》历期《弹拨乐一周简报》，持续记录世界弹拨乐领域的重要资讯。
 

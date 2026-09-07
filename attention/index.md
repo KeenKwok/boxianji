@@ -17,6 +17,19 @@ title: 拨弦记｜演出情报
 
 ---
 
+<h3>
+  <svg width="18" height="18" viewBox="0 0 24 24" style="vertical-align:-3px;margin-right:6px;">
+    <path fill="#F26522" d="M6.18 17.82A2.18 2.18 0 1 1 4 20a2.18 2.18 0 0 1 2.18-2.18z"/>
+    <path fill="#F26522" d="M4 11.27v3.09A5.64 5.64 0 0 1 9.64 20h3.09A8.73 8.73 0 0 0 4 11.27z"/>
+    <path fill="#F26522" d="M4 4v3.09A12.91 12.91 0 0 1 16.91 20H20A16 16 0 0 0 4 4z"/>
+  </svg>
+  演出情报 RSS
+</h3>
+
+<https://keenkwok.github.io/boxianji/attention.xml>
+
+---
+
 ## 关于拨弦记
 
 《拨弦记》持续关注世界弹拨乐领域的艺术节、赛事、学术、乐器制作、非遗、音乐会及人物资讯。

@@ -44,7 +44,7 @@ title: 首页
 
 ---
 
-## 近期值得关注
+## 演出情报
 
 {% for event in site.data.attention limit:3 %}
 <div style="margin:0.9em 0;">
@@ -54,7 +54,7 @@ title: 首页
 </div>
 {% endfor %}
 
-→ [查看全部近期值得关注](attention/)
+→ [查看全部演出情报](attention/)
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 近期值得关注
+title: 拨弦记｜演出情报
 ---
 
-# 近期值得关注
+# 拨弦记｜演出情报
 
-> 汇总近期值得关注的弹拨乐音乐会、艺术节、大师班及巡演资讯。
+> 持续收录近期值得关注的弹拨乐演出，为现场音乐爱好者提供演出情报。
 
 {% for event in site.data.attention %}
 <div style="margin:1em 0;">

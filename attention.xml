@@ -7,7 +7,7 @@ permalink: /attention.xml
   <channel>
     <title>拨弦记｜演出情报</title>
     <link>{{ site.url }}{{ site.baseurl }}/attention/</link>
-    <description>《拨弦记》持续更新世界弹拨乐近期重要演出。</description>
+    <description>《拨弦记》持续更新弹拨乐近期重要演出。</description>
     <language>zh-cn</language>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll</generator>

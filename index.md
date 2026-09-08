@@ -5,11 +5,25 @@ title: 首页
 
 # 拨弦记
 
-> 以弦為引，聽見世界
+> 记录弹拨乐，发现弦上世界。
 
 ---
 
-![](images/weekly/cover.JPG)
+## 演出情报
+
+《拨弦记》持续更新弹拨乐近期重要演出。
+
+{% for event in site.data.attention limit:3 %}
+<div style="margin:0.9em 0;">
+  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
+  {{ event.title }}
+</div>
+{% endfor %}
+
+→ [查看全部演出情报](attention/)
+
+---
 
 ## 弹拨乐一周简报
 
@@ -44,17 +58,12 @@ title: 首页
 
 ---
 
-## 演出情报
+## 开放接口
 
-{% for event in site.data.attention limit:3 %}
-<div style="margin:0.9em 0;">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-  {{ event.title }}
-</div>
-{% endfor %}
+《拨弦记》演出情报提供 RSS 与 JSON 两种开放接口。
 
-→ [查看全部演出情报](attention/)
+- [RSS 订阅](attention.xml)
+- [JSON 数据](attention.json)
 
 ---
 
@@ -65,9 +74,3 @@ title: 首页
 - 主理人网站：guitarkk.com
 - GitHub：keenkwok.github.io/boxianji/
 - 微信公众号：拨弦记
-
-<!--
----
-
-* 拨弦记｜弹拨乐资讯、音乐分享与知识记录
--->

@@ -19,7 +19,7 @@ permalink: /attention.xml
       <title>{{ event.date }}｜{{ event.city }}｜{{ event.title | escape }}</title>
       <link>{{ event.link }}</link>
       <guid isPermaLink="true">{{ event.link }}</guid>
-      <pubDate>{{ event.date | date: "%a, %d %b %Y 12:00:00 +0800" }}</pubDate>
+      <pubDate>{{ event.date | date: "%a, %d %b %Y 00:00:00 +0800" }}</pubDate>
       <description><![CDATA[
 <strong>{{ event.title }}</strong><br>
 📍 {{ event.city }}<br>

@@ -60,11 +60,11 @@ title: 拨弦记｜演出情报
     line-height:1.25;
     overflow-wrap:anywhere;
   ">
-    https://keenkwok.github.io/boxianji/attention.xml
+    {{ site.url }}{{ site.baseurl }}/attention.xml
   </div>
 
   <div style="margin-top:4px;font-size:0.8em;line-height:1.2;">
-    <a href="https://keenkwok.github.io/boxianji/attention.xml">
+    <a href="{{ site.url }}{{ site.baseurl }}/attention.xml">
       打开 RSS ↗
     </a>
   </div>
@@ -115,11 +115,11 @@ title: 拨弦记｜演出情报
     line-height:1.25;
     overflow-wrap:anywhere;
   ">
-    https://keenkwok.github.io/boxianji/attention.json
+    {{ site.url }}{{ site.baseurl }}/attention.json
   </div>
 
   <div style="margin-top:4px;font-size:0.8em;line-height:1.2;">
-    <a href="https://keenkwok.github.io/boxianji/attention.json">
+    <a href="{{ site.url }}{{ site.baseurl }}/attention.json">
       打开 JSON ↗
     </a>
   </div>

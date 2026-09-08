@@ -64,11 +64,13 @@ title: 拨弦记｜演出情报
     {{ site.url }}{{ site.baseurl }}/attention.xml
   </div>
 
+<!--
   <div style="margin-top:4px;font-size:0.8em;line-height:1.2;">
     <a href="{{ site.url }}{{ site.baseurl }}/attention.xml">
       打开 RSS ↗
     </a>
   </div>
+-->
 
 </div>
 
@@ -104,7 +106,9 @@ title: 拨弦记｜演出情报
   </div>
 
   <div style="font-size:0.78em;color:#777;margin-bottom:4px;">
-    获取《拨弦记》结构化演出数据
+    获取《拨弦记》结构化演出数据 <a href="{{ site.url }}{{ site.baseurl }}/attention.json">
+      打开 JSON ↗
+    </a>
   </div>
 
   <div style="
@@ -119,11 +123,13 @@ title: 拨弦记｜演出情报
     {{ site.url }}{{ site.baseurl }}/attention.json
   </div>
 
+<!--
   <div style="margin-top:4px;font-size:0.8em;line-height:1.2;">
     <a href="{{ site.url }}{{ site.baseurl }}/attention.json">
       打开 JSON ↗
     </a>
   </div>
+-->
 
 </div>
 

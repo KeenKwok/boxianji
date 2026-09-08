@@ -62,21 +62,22 @@ title: 拨弦记｜演出情报
 ">
 
   <div style="display:flex;align-items:center;margin-bottom:2px;">
-    <div style="
-      width:18px;
-      height:18px;
-      margin-right:6px;
-      flex-shrink:0;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family:monospace;
-      font-size:13px;
-      font-weight:bold;
-      color:#555;
-    ">
-      { }
-    </div>
+    <span style="
+  width:18px;
+  height:18px;
+  margin-right:6px;
+  flex-shrink:0;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-family:monospace;
+  font-size:13px;
+  font-weight:bold;
+  color:#555;
+  white-space:nowrap;
+">
+  { }
+   </span>
 
     <strong style="font-size:0.92em;">
       演出情报 JSON

@@ -22,8 +22,6 @@ permalink: /attention.xml
       <pubDate>{{ event.date | date: "%a, %d %b %Y 00:00:00 +0800" }}</pubDate>
       <description><![CDATA[
 <strong>{{ event.title }}</strong><br>
-📍 {{ event.city }}<br>
-📅 {{ event.date }}<br><br>
 
 <strong>查看演出详情：</strong><br>
 <a href="{{ event.link }}">{{ event.link }}</a><br><br>

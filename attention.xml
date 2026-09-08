@@ -27,7 +27,7 @@ permalink: /attention.xml
 <a href="{{ event.link }}">{{ event.link }}</a><br><br>
 
 <strong>更多演出：</strong><br>
-<a href="https://keenkwok.github.io/boxianji/attention/">拨弦记｜演出情报</a>
+<a href="{{ site.url }}{{ site.baseurl }}/attention/">拨弦记｜演出情报</a>
       ]]></description>
     </item>
 {% endfor %}

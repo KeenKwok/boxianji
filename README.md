@@ -31,3 +31,7 @@ https://keenkwok.github.io/boxianji/attention.xml
 https://keenkwok.github.io/boxianji/attention.json
 
 [打开 JSON ↗](https://keenkwok.github.io/boxianji/attention.json)
+
+### 数据来源
+
+演出情报以仓库中的 `_data/attention.yml` 作为唯一数据源，网站页面、RSS 与 JSON 接口均由该数据源生成。

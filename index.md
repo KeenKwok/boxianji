@@ -71,7 +71,7 @@ title: 首页
     <path fill="#F26522" d="M4 4v3.09A12.91 12.91 0 0 1 16.91 20H20A16 16 0 0 0 4 4z"/>
   </svg>
   <a href="attention.xml">RSS 订阅</a>
-</span>
+ </span>
 
 &nbsp;·&nbsp;
 

@@ -12,12 +12,14 @@ permalink: /attention.xml
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll</generator>
 
-{% for event in site.data.attention %}
+{% assign events = site.data.attention | sort: "date" | reverse %}
+
+{% for event in events %}
     <item>
       <title>{{ event.date }}｜{{ event.city }}｜{{ event.title | escape }}</title>
       <link>{{ event.link }}</link>
       <guid>{{ event.link }}</guid>
-      <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+      <pubDate>{{ event.date | date: "%a, %d %b %Y 12:00:00 +0800" }}</pubDate>
       <description><![CDATA[
 <strong>{{ event.title }}</strong><br>
 📍 {{ event.city }}<br>

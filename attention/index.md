@@ -81,21 +81,21 @@ title: 拨弦记｜演出情报
 
   <div style="display:flex;align-items:center;margin-bottom:2px;">
     <span style="
-  width:18px;
-  height:18px;
-  margin-right:6px;
-  flex-shrink:0;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-family:monospace;
-  font-size:13px;
-  font-weight:bold;
-  color:#555;
-  white-space:nowrap;
-">
-  { }
-   </span>
+      width:18px;
+      height:18px;
+      margin-right:6px;
+      flex-shrink:0;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      font-family:monospace;
+      font-size:13px;
+      font-weight:bold;
+      color:#555;
+      white-space:nowrap;
+    ">
+      { }
+    </span>
 
     <strong style="font-size:0.92em;">
       演出情报 JSON
@@ -130,10 +130,43 @@ title: 拨弦记｜演出情报
 
 ## 近期演出
 
+{% assign today = site.time | date: "%Y-%m-%d" %}
+
 {% for event in site.data.attention %}
+  {% if event.date >= today %}
 <div style="margin:1em 0;">
   <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
   <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
   {{ event.title }}
 </div>
+  {% endif %}
 {% endfor %}
+
+{% assign has_past = false %}
+
+{% for event in site.data.attention %}
+  {% if event.date < today %}
+    {% assign has_past = true %}
+  {% endif %}
+{% endfor %}
+
+{% if has_past %}
+
+<hr>
+
+## 已结束
+
+{% for event in site.data.attention %}
+  {% if event.date < today %}
+<div style="
+  margin:0.8em 0;
+  color:#888;
+">
+  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
+  {{ event.title }}
+</div>
+  {% endif %}
+{% endfor %}
+
+{% endif %}

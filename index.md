@@ -60,10 +60,32 @@ title: 首页
 
 ## 开放接口
 
-《拨弦记》演出情报提供 RSS 与 JSON 两种开放接口。
+<span style="font-size:0.82em;color:#777;">
+  演出情报开放数据：
+</span>
 
-- [RSS 订阅](attention.xml)
-- [JSON 数据](attention.json)
+<span style="white-space:nowrap;">
+  <svg width="15" height="15" viewBox="0 0 24 24" style="vertical-align:-2px;margin-right:3px;">
+    <path fill="#F26522" d="M6.18 17.82A2.18 2.18 0 1 1 4 20a2.18 2.18 0 0 1 2.18-2.18z"/>
+    <path fill="#F26522" d="M4 11.27v3.09A5.64 5.64 0 0 1 9.64 20h3.09A8.73 8.73 0 0 0 4 11.27z"/>
+    <path fill="#F26522" d="M4 4v3.09A12.91 12.91 0 0 1 16.91 20H20A16 16 0 0 0 4 4z"/>
+  </svg>
+  <a href="attention.xml">RSS 订阅</a>
+</span>
+
+&nbsp;·&nbsp;
+
+<span style="white-space:nowrap;">
+  <span style="
+    display:inline-block;
+    font-family:monospace;
+    font-size:12px;
+    font-weight:bold;
+    color:#555;
+    margin-right:3px;
+  ">{ }</span>
+  <a href="attention.json">JSON 数据</a>
+</span>
 
 ---
 

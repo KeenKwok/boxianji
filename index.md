@@ -79,11 +79,11 @@ title: 首页
 </p>
 
 <p style="margin-top:-4px;">
-  <a href="attention.xml">
+  <a href="{{ site.baseurl }}/attention.xml">
     <span style="color:#F26522;">◉</span> RSS 订阅
   </a>
   &nbsp;·&nbsp;
-  <a href="attention.json">
+  <a href="{{ site.baseurl }}/attention.json">
     <span style="font-family:monospace;font-weight:bold;color:#555;">{ }</span> JSON 数据
   </a>
 </p>

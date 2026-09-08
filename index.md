@@ -15,7 +15,6 @@ title: 首页
 
 {% assign today = site.time | date: "%s" %}
 {% assign fourteen_days = 1209600 %}
-
 {% assign has_recent = false %}
 
 {% for event in site.data.attention %}
@@ -24,11 +23,11 @@ title: 首页
 
   {% if diff >= 0 and diff <= fourteen_days %}
     {% assign has_recent = true %}
-    <div style="margin:0.9em 0;">
-      <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-      <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-      {{ event.title }}
-    </div>
+<div style="margin:0.9em 0;">
+  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
+  {{ event.title }}
+</div>
   {% endif %}
 {% endfor %}
 

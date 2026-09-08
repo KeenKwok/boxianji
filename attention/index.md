@@ -48,7 +48,8 @@ title: 拨弦记｜演出情报
   </div>
 
   <div style="font-size:0.78em;color:#777;margin-bottom:4px;">
-    订阅《拨弦记》近期演出情报
+    订阅《拨弦记》近期演出情报 <a href="{{ site.url }}{{ site.baseurl }}/attention.xml">
+      打开 RSS ↗
   </div>
 
   <div style="

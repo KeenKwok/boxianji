@@ -11,15 +11,30 @@ title: 首页
 
 ## 演出情报
 
-《拨弦记》持续更新弹拨乐近期重要演出。
+未来14天值得关注的弹拨乐演出。
 
-{% for event in site.data.attention limit:3 %}
-<div style="margin:0.9em 0;">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-  {{ event.title }}
-</div>
+{% assign today = site.time | date: "%s" %}
+{% assign fourteen_days = 1209600 %}
+
+{% assign has_recent = false %}
+
+{% for event in site.data.attention %}
+  {% assign event_time = event.date | date: "%s" %}
+  {% assign diff = event_time | minus: today %}
+
+  {% if diff >= 0 and diff <= fourteen_days %}
+    {% assign has_recent = true %}
+    <div style="margin:0.9em 0;">
+      <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+      <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
+      {{ event.title }}
+    </div>
+  {% endif %}
 {% endfor %}
+
+{% unless has_recent %}
+> 未来14天暂无收录演出。
+{% endunless %}
 
 → [查看全部演出情报](attention/)
 

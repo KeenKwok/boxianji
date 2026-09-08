@@ -53,6 +53,60 @@ title: 拨弦记｜演出情报
 
 </div>
 
+<div style="
+  border:1px solid #e5e5e5;
+  border-radius:8px;
+  padding:8px 11px;
+  margin:8px 0;
+  background:#fafafa;
+">
+
+  <div style="display:flex;align-items:center;margin-bottom:2px;">
+    <div style="
+      width:18px;
+      height:18px;
+      margin-right:6px;
+      flex-shrink:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:monospace;
+      font-size:13px;
+      font-weight:bold;
+      color:#555;
+    ">
+      { }
+    </div>
+
+    <strong style="font-size:0.92em;">
+      演出情报 JSON
+    </strong>
+  </div>
+
+  <div style="font-size:0.78em;color:#777;margin-bottom:4px;">
+    获取《拨弦记》结构化演出数据
+  </div>
+
+  <div style="
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:5px;
+    padding:4px 7px;
+    font-size:0.72em;
+    line-height:1.25;
+    overflow-wrap:anywhere;
+  ">
+    https://keenkwok.github.io/boxianji/attention.json
+  </div>
+
+  <div style="margin-top:4px;font-size:0.8em;line-height:1.2;">
+    <a href="https://keenkwok.github.io/boxianji/attention.json">
+      打开 JSON ↗
+    </a>
+  </div>
+
+</div>
+
 ---
 
 ## 近期演出

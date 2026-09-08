@@ -73,13 +73,3 @@ title: 首页
     <span style="font-family:monospace;font-weight:bold;color:#555;">{ }</span> JSON 数据
   </a>
 </p>
-
----
-
-## 关于拨弦记
-
-《拨弦记》持续关注世界弹拨乐领域的艺术节、赛事、学术、乐器制作、非遗、音乐会及人物资讯。
-
-- 主理人网站：guitarkk.com
-- GitHub：keenkwok.github.io/boxianji/
-- 微信公众号：拨弦记

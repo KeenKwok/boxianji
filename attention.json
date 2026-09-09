@@ -8,9 +8,20 @@ layout: null
   "events": [
 {% for event in site.data.attention %}
     {
+      "id": "{{ event.id | escape }}",
       "date": "{{ event.date }}",
       "city": "{{ event.city | escape }}",
       "title": "{{ event.title | escape }}",
+      "performers": [
+{% for performer in event.performers %}
+        "{{ performer | escape }}"{% unless forloop.last %},{% endunless %}
+{% endfor %}
+      ],
+      "instruments": [
+{% for instrument in event.instruments %}
+        "{{ instrument | escape }}"{% unless forloop.last %},{% endunless %}
+{% endfor %}
+      ],
       "link": "{{ event.link | escape }}"
     }{% unless forloop.last %},{% endunless %}
 {% endfor %}

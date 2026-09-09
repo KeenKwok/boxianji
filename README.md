@@ -2,7 +2,7 @@
 
 > 拨弦记｜弹拨乐资讯、音乐分享与知识记录
 
-![Version](https://img.shields.io/badge/version-v1.0.0-success)
+![GitHub release](https://img.shields.io/github/v/release/KeenKwok/boxianji)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-black)
 

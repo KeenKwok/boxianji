@@ -145,6 +145,27 @@ title: 拨弦记｜演出情报
   <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
   <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
   {{ event.title }}
+
+  {% if event.performers and event.performers.size > 0 %}
+  <div style="
+    margin-top:3px;
+    font-size:0.82em;
+    color:#777;
+  ">
+    演奏者：{{ event.performers | join: " · " }}
+  </div>
+  {% endif %}
+
+  {% if event.instruments and event.instruments.size > 0 %}
+  <div style="
+    margin-top:2px;
+    font-size:0.82em;
+    color:#777;
+  ">
+    乐器：{{ event.instruments | join: " · " }}
+  </div>
+  {% endif %}
+
 </div>
   {% endif %}
 {% endfor %}
@@ -172,6 +193,27 @@ title: 拨弦记｜演出情报
   <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
   <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
   {{ event.title }}
+
+  {% if event.performers and event.performers.size > 0 %}
+  <div style="
+    margin-top:3px;
+    font-size:0.82em;
+    color:#999;
+  ">
+    演奏者：{{ event.performers | join: " · " }}
+  </div>
+  {% endif %}
+
+  {% if event.instruments and event.instruments.size > 0 %}
+  <div style="
+    margin-top:2px;
+    font-size:0.82em;
+    color:#999;
+  ">
+    乐器：{{ event.instruments | join: " · " }}
+  </div>
+  {% endif %}
+
 </div>
   {% endif %}
 {% endfor %}

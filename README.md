@@ -51,3 +51,11 @@ https://keenkwok.github.io/boxianji/attention.json
 数据流向：
 
 `_data/attention.yml` → 演出情报页面 / RSS / JSON
+
+---
+
+## 版本历史
+
+| 版本 | 日期 | 更新内容 |
+|------|------|----------|
+| v1.0.0 | 2026-09-09 | 首个正式版本，开放演出情报数据库、RSS、JSON 接口、首页演出入口、周报归档。 |

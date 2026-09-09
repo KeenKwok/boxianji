@@ -1,6 +1,12 @@
-# 拨弦记
+# boxianji
 
-**弹拨乐资讯、音乐分享与知识记录**
+> 拨弦记｜弹拨乐资讯、音乐分享与知识记录
+
+![Version](https://img.shields.io/badge/version-v1.0.0-success)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-black)
+
+持续记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、音乐会及人物资讯。
 
 ---
 

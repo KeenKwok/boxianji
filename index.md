@@ -23,11 +23,48 @@ title: 首页
 
   {% if diff >= 0 and diff <= fourteen_days %}
     {% assign has_recent = true %}
-<div style="margin:0.9em 0;">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-  {{ event.title }}
+
+<div style="margin:0.75em 0;">
+
+  <div style="
+    line-height:1.35;
+    margin-bottom:2px;
+  ">
+    <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+    <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small>
+  </div>
+
+  <div style="
+    line-height:1.35;
+    font-weight:600;
+  ">
+    {{ event.title }}
+  </div>
+
+  {% if event.performers and event.performers.size > 0 %}
+  <div style="
+    margin-top:1px;
+    font-size:0.78em;
+    line-height:1.25;
+    color:#777;
+  ">
+    演奏者：{{ event.performers | join: " · " }}
+  </div>
+  {% endif %}
+
+  {% if event.instruments and event.instruments.size > 0 %}
+  <div style="
+    margin-top:0;
+    font-size:0.78em;
+    line-height:1.25;
+    color:#777;
+  ">
+    乐器：{{ event.instruments | join: " · " }}
+  </div>
+  {% endif %}
+
 </div>
+
   {% endif %}
 {% endfor %}
 

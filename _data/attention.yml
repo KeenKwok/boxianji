@@ -1,40 +1,82 @@
-- date: "2026-09-27"
+- id: "20260927-guangzhou-goran-sollscher"
+  date: "2026-09-27"
   city: "广州"
   title: "约兰·索舍尔（Göran Söllscher）独奏音乐会"
+  performers:
+    - "约兰·索舍尔"
+  instruments:
+    - "吉他"
   link: "https://mp.weixin.qq.com/s/MWcn8QRkBP8Qt-7p6LMDfQ"
 
-- date: "2026-09-26"
+- id: "20260926-shanghai-wangjian-goran-sollscher"
+  date: "2026-09-26"
   city: "上海"
   title: "王健 × 约兰·索舍尔（Göran Söllscher）大提琴、吉他二重奏"
+  performers:
+    - "王健"
+    - "约兰·索舍尔"
+  instruments:
+    - "大提琴"
+    - "吉他"
   link: "https://mp.weixin.qq.com/s/yjqkLZfPWOP7h5uCMZPvaA"
 
-- date: "2026-09-13"
+- id: "20260913-chengdu-wumanni-zhongkai"
+  date: "2026-09-13"
   city: "成都"
   title: "吴曼妮×仲凯古典吉他手风琴二重奏"
+  performers:
+    - "吴曼妮"
+    - "仲凯"
+  instruments:
+    - "吉他"
+    - "手风琴"
   link: "https://mp.weixin.qq.com/s/uAix-q8RhQyatZqO7vV0UQ"
 
-- date: "2026-09-12"
+- id: "20260912-guangzhou-zunlingzhixiu"
+  date: "2026-09-12"
   city: "广州"
   title: "尊岭之秀乐团·影视金曲与岭南民乐主题音乐会"
+  performers:
+    - "尊岭之秀乐团"
+  instruments: []
   link: "https://mp.weixin.qq.com/s/maxL-XRmmxMClD_RFxYbbQ"
 
-- date: "2026-09-12"
+- id: "20260912-jinan-wangzhongshan"
+  date: "2026-09-12"
   city: "济南"
   title: "望故乡·王中山古筝音乐会"
+  performers:
+    - "王中山"
+  instruments:
+    - "古筝"
   link: "https://mp.weixin.qq.com/s/I9gFXbh99j3QwRth4dN22w"
 
-- date: "2026-09-06"
+- id: "20260906-shenzhen-paganini-champions-night"
+  date: "2026-09-06"
   city: "深圳"
   title: "帕格尼尼冠军之夜 吉他与小提琴音乐会"
+  performers: []
+  instruments:
+    - "吉他"
+    - "小提琴"
   link: "https://mp.weixin.qq.com/s/6HDvRmNtwLolhX6OxNyHNw"
 
-- date: "2026-09-05"
+- id: "20260905-shanghai-paganini-champions-night"
+  date: "2026-09-05"
   city: "上海"
   title: "帕格尼尼冠军之夜 吉他与小提琴音乐会"
+  performers: []
+  instruments:
+    - "吉他"
+    - "小提琴"
   link: "https://mp.weixin.qq.com/s/TxVvPLHug-PuABeIl_CiVw"
 
-- date: "2026-09-04"
+- id: "20260904-shanghai-marcin-dylla"
+  date: "2026-09-04"
   city: "上海"
   title: "Marcin Dylla 古典吉他中国巡演上海站"
+  performers:
+    - "马尔钦·迪拉"
+  instruments:
+    - "吉他"
   link: "https://mp.weixin.qq.com/s/lZ1Y0zKDu18yQRo-z5Oihw"
-

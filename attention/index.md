@@ -141,15 +141,28 @@ title: 拨弦记｜演出情报
 
 {% for event in site.data.attention %}
   {% if event.date >= today %}
-<div style="margin:1em 0;">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-  {{ event.title }}
+
+<div style="margin:0.75em 0;">
+
+  <div style="
+    line-height:1.35;
+    margin-bottom:2px;
+  ">
+    <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+    <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small>
+  </div>
+
+  <div style="
+    line-height:1.35;
+  ">
+    {{ event.title }}
+  </div>
 
   {% if event.performers and event.performers.size > 0 %}
   <div style="
-    margin-top:3px;
-    font-size:0.82em;
+    margin-top:1px;
+    font-size:0.78em;
+    line-height:1.25;
     color:#777;
   ">
     演奏者：{{ event.performers | join: " · " }}
@@ -158,8 +171,9 @@ title: 拨弦记｜演出情报
 
   {% if event.instruments and event.instruments.size > 0 %}
   <div style="
-    margin-top:2px;
-    font-size:0.82em;
+    margin-top:0;
+    font-size:0.78em;
+    line-height:1.25;
     color:#777;
   ">
     乐器：{{ event.instruments | join: " · " }}
@@ -167,8 +181,10 @@ title: 拨弦记｜演出情报
   {% endif %}
 
 </div>
+
   {% endif %}
 {% endfor %}
+
 
 {% assign has_past = false %}
 
@@ -178,6 +194,7 @@ title: 拨弦记｜演出情报
   {% endif %}
 {% endfor %}
 
+
 {% if has_past %}
 
 <hr>
@@ -186,18 +203,31 @@ title: 拨弦记｜演出情报
 
 {% for event in site.data.attention %}
   {% if event.date < today %}
+
 <div style="
-  margin:0.8em 0;
+  margin:0.65em 0;
   color:#888;
 ">
-  <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
-  <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small><br>
-  {{ event.title }}
+
+  <div style="
+    line-height:1.35;
+    margin-bottom:2px;
+  ">
+    <strong>🎫 {{ event.date }}｜{{ event.city }}</strong>
+    <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small>
+  </div>
+
+  <div style="
+    line-height:1.35;
+  ">
+    {{ event.title }}
+  </div>
 
   {% if event.performers and event.performers.size > 0 %}
   <div style="
-    margin-top:3px;
-    font-size:0.82em;
+    margin-top:1px;
+    font-size:0.78em;
+    line-height:1.25;
     color:#999;
   ">
     演奏者：{{ event.performers | join: " · " }}
@@ -206,8 +236,9 @@ title: 拨弦记｜演出情报
 
   {% if event.instruments and event.instruments.size > 0 %}
   <div style="
-    margin-top:2px;
-    font-size:0.82em;
+    margin-top:0;
+    font-size:0.78em;
+    line-height:1.25;
     color:#999;
   ">
     乐器：{{ event.instruments | join: " · " }}
@@ -215,6 +246,7 @@ title: 拨弦记｜演出情报
   {% endif %}
 
 </div>
+
   {% endif %}
 {% endfor %}
 

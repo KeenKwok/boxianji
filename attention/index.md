@@ -154,6 +154,7 @@ title: 拨弦记｜演出情报
 
   <div style="
     line-height:1.35;
+    font-weight:600;
   ">
     {{ event.title }}
   </div>
@@ -219,6 +220,7 @@ title: 拨弦记｜演出情报
 
   <div style="
     line-height:1.35;
+    font-weight:600;
   ">
     {{ event.title }}
   </div>

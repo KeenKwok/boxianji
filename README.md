@@ -28,7 +28,7 @@
 
 项目的编辑规范、运营流程和长期规划。
 
-- 📘 [编辑操作手册](docs/EDITORIAL.md)
+- 📘 编辑操作手册 (EDITORIAL.md) *（计划）*
 - 🗂️ 数据规范（DATA_SCHEMA.md）*（计划）*
 - 🗺️ 开发路线图（ROADMAP.md）*（计划）*
 

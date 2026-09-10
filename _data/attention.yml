@@ -8,6 +8,24 @@
     - "吉他"
   link: "https://mp.weixin.qq.com/s/MWcn8QRkBP8Qt-7p6LMDfQ"
 
+- id: "20260927-shanghai-zide-qinshe-qinweihewu"
+  date: "2026-09-27"
+  city: "上海"
+  title: "自得琴社·琴为何物·战汉·启元（加场）"
+  performers:
+    - "自得琴社"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/CeK7tEPcMGxo4npTW6mfDg"
+
+- id: "20260926-shanghai-zide-qinshe-qinweihewu"
+  date: "2026-09-26"
+  city: "上海"
+  title: "自得琴社·琴为何物·战汉·启元"
+  performers:
+    - "自得琴社"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/CeK7tEPcMGxo4npTW6mfDg"
+
 - id: "20260926-shanghai-wangjian-goran-sollscher"
   date: "2026-09-26"
   city: "上海"

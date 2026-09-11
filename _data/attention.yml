@@ -38,6 +38,17 @@
     - "吉他"
   link: "https://mp.weixin.qq.com/s/yjqkLZfPWOP7h5uCMZPvaA"
 
+- id: "20260919-shenzhen-wumanni-liuxian-dubai-fudiao"
+  date: "2026-09-19"
+  city: "深圳"
+  title: "《六弦上的独白与复调》吴曼妮古典吉他独奏音乐会"
+  performers:
+    - "吴曼妮"
+    - "仲凯"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/aYTxaq9Xew5H0D2n84gyFw"
+
 - id: "20260913-chengdu-wumanni-zhongkai"
   date: "2026-09-13"
   city: "成都"

@@ -137,12 +137,44 @@ title: 拨弦记｜演出情报
 
 ## 近期演出
 
+<div id="city-filter" style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:10px 0 16px;
+">
+
+  <button
+    type="button"
+    data-city-filter="全部"
+    style="
+      border:1px solid #ddd;
+      border-radius:16px;
+      padding:5px 11px;
+      background:#222;
+      color:#fff;
+      font-size:0.78em;
+      line-height:1.2;
+      cursor:pointer;
+    "
+  >
+    全部
+  </button>
+
+</div>
+
 {% assign today = site.time | date: "%Y-%m-%d" %}
+
+<div id="upcoming-events">
 
 {% for event in site.data.attention %}
   {% if event.date >= today %}
 
-<div style="margin:0.75em 0;">
+<div
+  class="event-item"
+  data-city="{{ event.city | escape }}"
+  style="margin:0.75em 0;"
+>
 
   <div style="
     line-height:1.35;
@@ -185,6 +217,8 @@ title: 拨弦记｜演出情报
 
   {% endif %}
 {% endfor %}
+
+</div>
 
 
 {% assign has_past = false %}
@@ -198,17 +232,25 @@ title: 拨弦记｜演出情报
 
 {% if has_past %}
 
+<div id="past-events-section">
+
 <hr>
 
 ## 已结束
 
+<div id="past-events">
+
 {% for event in site.data.attention %}
   {% if event.date < today %}
 
-<div style="
-  margin:0.65em 0;
-  color:#888;
-">
+<div
+  class="event-item"
+  data-city="{{ event.city | escape }}"
+  style="
+    margin:0.65em 0;
+    color:#888;
+  "
+>
 
   <div style="
     line-height:1.35;
@@ -252,4 +294,97 @@ title: 拨弦记｜演出情报
   {% endif %}
 {% endfor %}
 
+</div>
+</div>
+
 {% endif %}
+
+
+<script>
+(function () {
+  var filterBox = document.getElementById('city-filter');
+
+  if (!filterBox) return;
+
+  var events = document.querySelectorAll('.event-item');
+  var cities = [];
+
+  events.forEach(function (event) {
+    var city = event.getAttribute('data-city');
+
+    if (city && cities.indexOf(city) === -1) {
+      cities.push(city);
+    }
+  });
+
+  cities.sort(function (a, b) {
+    return a.localeCompare(b, 'zh-CN');
+  });
+
+  cities.forEach(function (city) {
+    var button = document.createElement('button');
+
+    button.type = 'button';
+    button.textContent = city;
+    button.setAttribute('data-city-filter', city);
+
+    button.style.cssText = `
+      border:1px solid #ddd;
+      border-radius:16px;
+      padding:5px 11px;
+      background:#fff;
+      color:#555;
+      font-size:0.78em;
+      line-height:1.2;
+      cursor:pointer;
+    `;
+
+    filterBox.appendChild(button);
+  });
+
+  var buttons = filterBox.querySelectorAll('button');
+  var pastSection = document.getElementById('past-events-section');
+
+  function applyFilter(city) {
+
+    events.forEach(function (event) {
+      var eventCity = event.getAttribute('data-city');
+
+      if (city === '全部' || eventCity === city) {
+        event.style.display = '';
+      } else {
+        event.style.display = 'none';
+      }
+    });
+
+    buttons.forEach(function (button) {
+      var isActive = button.getAttribute('data-city-filter') === city;
+
+      button.style.background = isActive ? '#222' : '#fff';
+      button.style.color = isActive ? '#fff' : '#555';
+      button.style.borderColor = isActive ? '#222' : '#ddd';
+    });
+
+    if (pastSection) {
+      var pastEvents = pastSection.querySelectorAll('.event-item');
+      var hasVisiblePastEvent = false;
+
+      pastEvents.forEach(function (event) {
+        if (event.style.display !== 'none') {
+          hasVisiblePastEvent = true;
+        }
+      });
+
+      pastSection.style.display = hasVisiblePastEvent ? '' : 'none';
+    }
+  }
+
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      applyFilter(button.getAttribute('data-city-filter'));
+    });
+  });
+
+  applyFilter('全部');
+})();
+</script>

@@ -236,9 +236,16 @@ title: 拨弦记｜演出情报
 
 <hr>
 
-## 已结束
+<div id="past-events-section">
 
-<div id="past-events">
+<div style="
+  font-size:1.5em;
+  font-weight:600;
+  line-height:1.3;
+  margin:0.67em 0;
+">
+  已结束
+</div>
 
 {% for event in site.data.attention %}
   {% if event.date < today %}

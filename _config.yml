@@ -1,7 +1,7 @@
 title: 拨弦记
 description: 世界弹拨乐资讯、音乐分享与知识记录
-url: "https://keenkwok.github.io"
-baseurl: "/boxianji"
+url: "https://boxianji.guitarkk.com"
+baseurl: ""
 
 theme: minima
 markdown: kramdown

@@ -24,9 +24,9 @@ title: 演出档案
 
 {% assign events = site.data.attention | sort: "date" | reverse %}
 
-<!-- 城市筛选 -->
-
 {% assign cities = events | map: "city" | uniq | sort %}
+
+<!-- 城市筛选 -->
 
 <div style="
   display:flex;
@@ -82,6 +82,7 @@ title: 演出档案
   {% assign event_month = event.date | date: "%m" %}
 
   {% if event_year != current_year %}
+
     {% assign current_year = event_year %}
     {% assign current_month = "" %}
 
@@ -103,6 +104,19 @@ title: 演出档案
 
     {% assign current_month = event_month %}
 
+    {% assign month_count = 0 %}
+
+    {% for count_event in events %}
+
+      {% assign count_year = count_event.date | date: "%Y" %}
+      {% assign count_month = count_event.date | date: "%m" %}
+
+      {% if count_year == current_year and count_month == current_month %}
+        {% assign month_count = month_count | plus: 1 %}
+      {% endif %}
+
+    {% endfor %}
+
     <div
       class="archive-month"
       data-year="{{ event_year }}"
@@ -112,17 +126,12 @@ title: 演出档案
         margin-bottom:0.25em;
       ">
 
-      <h3
-        class="month-title"
-        style="
-          margin-bottom:0;
-          font-size:1.05em;
-          font-weight:600;
-        ">
-        <span class="month-name">
-          {{ current_month | plus: 0 }}月
-        </span>
-        <span class="month-count"></span>
+      <h3 style="
+        margin-bottom:0;
+        font-size:1.05em;
+        font-weight:600;
+      ">
+        {{ current_month | plus: 0 }}月 · {{ month_count }}场
       </h3>
 
     </div>
@@ -188,7 +197,7 @@ title: 演出档案
 
 function filterArchive(city) {
 
-  /* 更新胶囊状态 */
+  /* 更新城市胶囊 */
 
   document.querySelectorAll('.city-filter').forEach(function(button) {
     button.classList.remove('active');
@@ -202,6 +211,7 @@ function filterArchive(city) {
     activeButton.classList.add('active');
   }
 
+
   /* 筛选演出 */
 
   document.querySelectorAll('.archive-event').forEach(function(event) {
@@ -214,7 +224,8 @@ function filterArchive(city) {
 
   });
 
-  /* 重新计算每个月的数量 */
+
+  /* 重新计算月份数量 */
 
   document.querySelectorAll('.archive-month').forEach(function(month) {
 
@@ -239,23 +250,22 @@ function filterArchive(city) {
 
     });
 
-    var countElement = month.querySelector('.month-count');
-
     if (visibleCount > 0) {
-
-      countElement.textContent =
-        ' · ' + visibleCount + '场';
 
       month.style.display = '';
 
+      month.querySelector('h3').textContent =
+        parseInt(monthNumber, 10) + '月 · ' +
+        visibleCount + '场';
+
     } else {
 
-      countElement.textContent = '';
       month.style.display = 'none';
 
     }
 
   });
+
 
   /* 隐藏没有内容的年份 */
 
@@ -263,13 +273,13 @@ function filterArchive(city) {
 
     var year = yearElement.dataset.year;
 
-    var visibleMonths = document.querySelectorAll(
+    var months = document.querySelectorAll(
       '.archive-month[data-year="' + year + '"]'
     );
 
     var hasVisibleMonth = false;
 
-    visibleMonths.forEach(function(month) {
+    months.forEach(function(month) {
 
       if (month.style.display !== 'none') {
         hasVisibleMonth = true;
@@ -277,38 +287,14 @@ function filterArchive(city) {
 
     });
 
-    yearElement.style.display =
-      hasVisibleMonth ? '' : 'none';
+    if (hasVisibleMonth) {
+      yearElement.style.display = '';
+    } else {
+      yearElement.style.display = 'none';
+    }
 
   });
 
 }
-
-
-/* 初始状态 */
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  document.querySelectorAll('.archive-month').forEach(function(month) {
-
-    var year = month.dataset.year;
-    var monthNumber = month.dataset.month;
-
-    var events = document.querySelectorAll(
-      '.archive-event[data-year="' +
-      year +
-      '"][data-month="' +
-      monthNumber +
-      '"]'
-    );
-
-    var countElement = month.querySelector('.month-count');
-
-    countElement.textContent =
-      ' · ' + events.length + '场';
-
-  });
-
-});
 
 </script>

@@ -47,6 +47,16 @@
   instruments: []
   link: "https://mp.weixin.qq.com/s/JK25JIM5U7t5bR5oaBg-DQ"
 
+- id: "20260919-suzhou-fengmantian-shanxia-shanshang"
+  date: "2026-09-19"
+  city: "苏州"
+  title: "山下山上·冯满天·阮咸音乐会"
+  performers:
+    - "冯满天"
+  instruments:
+    - "中阮"
+  link: "https://mp.weixin.qq.com/s/U5iPUIieedE2g5rHgVwrgg"
+
 - id: "20260919-shenzhen-wumanni-liuxian-dubai-fudiao"
   date: "2026-09-19"
   city: "深圳"

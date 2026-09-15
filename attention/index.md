@@ -39,15 +39,19 @@ title: 拨弦记｜演出情报
 
 {% assign today = site.time | date: "%Y-%m-%d" %}
 
+<!-- 近期演出 -->
+
 <div id="upcoming-events">
 
-{% assign upcoming_events = site.data.attention | sort: "date" %}
+{% assign upcoming_events = site.data.attention | sort: "date" | reverse %}
 
 {% for event in upcoming_events %}
+
   {% if event.date >= today %}
 
 <div
   class="event-item upcoming-event"
+  data-date="{{ event.date }}"
   data-city="{{ event.city | escape }}"
   style="margin:0.75em 0;"
 >
@@ -92,19 +96,24 @@ title: 拨弦记｜演出情报
 </div>
 
   {% endif %}
+
 {% endfor %}
 
 </div>
 
 
+<!-- 已结束 -->
+
 {% assign past_events = site.data.attention | sort: "date" | reverse %}
-{% assign past_count = 0 %}
 {% assign has_past = false %}
 
 {% for event in past_events %}
+
   {% if event.date < today %}
     {% assign has_past = true %}
+    {% break %}
   {% endif %}
+
 {% endfor %}
 
 
@@ -114,22 +123,28 @@ title: 拨弦记｜演出情报
 
 <div id="past-events-section">
 
-<div style="
-  font-size:1.5em;
-  font-weight:600;
-  line-height:1.3;
-  margin:0.67em 0;
-">
-  已结束
-</div>
+  <div style="
+    font-size:1.5em;
+    font-weight:600;
+    line-height:1.3;
+    margin:0.67em 0;
+  ">
+    已结束
+  </div>
+
+  <div id="past-events-list">
+
+{% assign past_count = 0 %}
 
 {% for event in past_events %}
+
   {% if event.date < today %}
 
     {% if past_count < 5 %}
 
 <div
   class="event-item past-event"
+  data-date="{{ event.date }}"
   data-city="{{ event.city | escape }}"
   style="
     margin:0.65em 0;
@@ -181,17 +196,20 @@ title: 拨弦记｜演出情报
     {% endif %}
 
   {% endif %}
+
 {% endfor %}
 
+  </div>
 
-<div style="
-  margin:1.2em 0 0.5em 14px;
-  font-size:0.85em;
-">
-  <a href="{{ '/archive/' | relative_url }}">
-    查看完整演出档案 →
-  </a>
-</div>
+
+  <div style="
+    margin:1.2em 0 0.5em 14px;
+    font-size:0.85em;
+  ">
+    <a href="{{ '/archive/' | relative_url }}">
+      查看完整演出档案 →
+    </a>
+  </div>
 
 </div>
 
@@ -239,10 +257,26 @@ title: 拨弦记｜演出情报
 
   <div style="display:flex;align-items:center;margin-bottom:2px;">
 
-    <svg width="18" height="18" viewBox="0 0 24 24" style="margin-right:6px;flex-shrink:0;">
-      <path fill="#F26522" d="M6.18 17.82A2.18 2.18 0 1 1 4 20a2.18 2.18 0 0 1 2.18-2.18z"/>
-      <path fill="#F26522" d="M4 11.27v3.09A5.64 5.64 0 0 1 9.64 20h3.09A8.73 8.73 0 0 0 4 11.27z"/>
-      <path fill="#F26522" d="M4 4v3.09A12.91 12.91 0 0 1 16.91 20H20A16 16 0 0 0 4 4z"/>
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      style="margin-right:6px;flex-shrink:0;"
+    >
+      <path
+        fill="#F26522"
+        d="M6.18 17.82A2.18 2.18 0 1 1 4 20a2.18 2.18 0 0 1 2.18-2.18z"
+      />
+
+      <path
+        fill="#F26522"
+        d="M4 11.27v3.09A5.64 5.64 0 0 1 9.64 20h3.09A8.73 8.73 0 0 0 4 11.27z"
+      />
+
+      <path
+        fill="#F26522"
+        d="M4 4v3.09A12.91 12.91 0 0 1 16.91 20H20A16 16 0 0 0 4 4z"
+      />
     </svg>
 
     <strong style="font-size:0.92em;">
@@ -341,18 +375,35 @@ title: 拨弦记｜演出情报
 <script>
 (function () {
 
-  var filterBox = document.getElementById('city-filter');
+  var filterBox =
+    document.getElementById('city-filter');
 
   if (!filterBox) return;
 
-  var events = document.querySelectorAll('.event-item');
+
+  /* =========================
+     获取全部演出
+     ========================= */
+
+  var events =
+    document.querySelectorAll('.event-item');
+
   var cities = [];
+
+
+  /* =========================
+     收集城市
+     ========================= */
 
   events.forEach(function (event) {
 
-    var city = event.getAttribute('data-city');
+    var city =
+      event.getAttribute('data-city');
 
-    if (city && cities.indexOf(city) === -1) {
+    if (
+      city &&
+      cities.indexOf(city) === -1
+    ) {
       cities.push(city);
     }
 
@@ -360,17 +411,32 @@ title: 拨弦记｜演出情报
 
 
   cities.sort(function (a, b) {
-    return a.localeCompare(b, 'zh-CN');
+
+    return a.localeCompare(
+      b,
+      'zh-CN'
+    );
+
   });
 
 
+  /* =========================
+     创建城市按钮
+     ========================= */
+
   cities.forEach(function (city) {
 
-    var button = document.createElement('button');
+    var button =
+      document.createElement('button');
 
     button.type = 'button';
+
     button.textContent = city;
-    button.setAttribute('data-city-filter', city);
+
+    button.setAttribute(
+      'data-city-filter',
+      city
+    );
 
     button.style.cssText = `
       border:1px solid #ddd;
@@ -388,17 +454,25 @@ title: 拨弦记｜演出情报
   });
 
 
-  var buttons = filterBox.querySelectorAll('button');
-  var pastSection = document.getElementById('past-events-section');
+  var buttons =
+    filterBox.querySelectorAll('button');
 
+
+  /* =========================
+     应用城市筛选
+     ========================= */
 
   function applyFilter(city) {
 
     events.forEach(function (event) {
 
-      var eventCity = event.getAttribute('data-city');
+      var eventCity =
+        event.getAttribute('data-city');
 
-      if (city === '全部' || eventCity === city) {
+      if (
+        city === '全部' ||
+        eventCity === city
+      ) {
         event.style.display = '';
       } else {
         event.style.display = 'none';
@@ -407,10 +481,16 @@ title: 拨弦记｜演出情报
     });
 
 
+    /* =========================
+       更新城市按钮状态
+       ========================= */
+
     buttons.forEach(function (button) {
 
       var isActive =
-        button.getAttribute('data-city-filter') === city;
+        button.getAttribute(
+          'data-city-filter'
+        ) === city;
 
       button.style.background =
         isActive ? '#222' : '#fff';
@@ -424,21 +504,34 @@ title: 拨弦记｜演出情报
     });
 
 
+    /* =========================
+       判断已结束区域是否显示
+       ========================= */
+
+    var pastSection =
+      document.getElementById(
+        'past-events-section'
+      );
+
     if (pastSection) {
 
       var pastEvents =
-        pastSection.querySelectorAll('.past-event');
+        pastSection.querySelectorAll(
+          '.past-event'
+        );
 
-      var hasVisiblePastEvent = false;
+      var hasVisiblePastEvent =
+        false;
 
       pastEvents.forEach(function (event) {
 
-        if (event.style.display !== 'none') {
+        if (
+          event.style.display !== 'none'
+        ) {
           hasVisiblePastEvent = true;
         }
 
       });
-
 
       pastSection.style.display =
         hasVisiblePastEvent ? '' : 'none';
@@ -448,18 +541,29 @@ title: 拨弦记｜演出情报
   }
 
 
+  /* =========================
+     绑定按钮
+     ========================= */
+
   buttons.forEach(function (button) {
 
-    button.addEventListener('click', function () {
+    button.addEventListener(
+      'click',
+      function () {
 
-      applyFilter(
-        button.getAttribute('data-city-filter')
-      );
+        applyFilter(
+          button.getAttribute(
+            'data-city-filter'
+          )
+        );
 
-    });
+      }
+    );
 
   });
 
+
+  /* 默认显示全部 */
 
   applyFilter('全部');
 

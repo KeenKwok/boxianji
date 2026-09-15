@@ -12,9 +12,9 @@
 
 ### 🌐 网站
 
-[《拨弦记》网站](https://keenkwok.github.io/boxianji/)
+[《拨弦记》网站](https://boxianji.guitarkk.com/)
 
-[拨弦记｜演出情报](https://keenkwok.github.io/boxianji/attention/)
+[拨弦记｜演出情报](https://boxianji.guitarkk.com/attention/)
 
 ---
 
@@ -44,17 +44,17 @@
 
 订阅《拨弦记》近期演出情报：
 
-https://keenkwok.github.io/boxianji/attention.xml
+https://boxianji.guitarkk.com/attention.xml
 
-[打开 RSS ↗](https://keenkwok.github.io/boxianji/attention.xml)
+[打开 RSS ↗](https://boxianji.guitarkk.com/attention.xml)
 
 ### JSON
 
 获取结构化演出数据：
 
-https://keenkwok.github.io/boxianji/attention.json
+https://boxianji.guitarkk.com/attention.json
 
-[打开 JSON ↗](https://keenkwok.github.io/boxianji/attention.json)
+[打开 JSON ↗](https://boxianji.guitarkk.com/attention.json)
 
 ### 数据来源
 

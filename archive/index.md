@@ -9,7 +9,7 @@ title: 演出档案
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
-{% assign month_events = "" %}
+{% assign month_count = 0 %}
 
 {% for event in events %}
 
@@ -23,25 +23,19 @@ title: 演出档案
 
   {% if event_month != current_month %}
 
-    {% if current_month != "" %}
-      <div style="margin-top:-0.8em;margin-bottom:1.2em;font-size:0.78em;color:#999;">
-        共 {{ month_events.size }} 场
-      </div>
-    {% endif %}
-
     {% assign current_month = event_month %}
-    {% assign month_events = "" | split: "" %}
+    {% assign month_count = 0 %}
 
-    {% for month_event in events %}
-      {% assign month_event_year = month_event.date | date: "%Y" %}
-      {% assign month_event_month = month_event.date | date: "%m" %}
+    {% for count_event in events %}
+      {% assign count_year = count_event.date | date: "%Y" %}
+      {% assign count_month = count_event.date | date: "%m" %}
 
-      {% if month_event_year == current_year and month_event_month == current_month %}
-        {% assign month_events = month_events | push: month_event %}
+      {% if count_year == current_year and count_month == current_month %}
+        {% assign month_count = month_count | plus: 1 %}
       {% endif %}
     {% endfor %}
 
-### {{ current_month | plus: 0 }}月
+### {{ current_month | plus: 0 }}月 · {{ month_count }}场
 
   {% endif %}
 
@@ -69,9 +63,3 @@ title: 演出档案
 </div>
 
 {% endfor %}
-
-{% if current_month != "" %}
-  <div style="margin-top:-0.8em;margin-bottom:1.2em;font-size:0.78em;color:#999;">
-    共 {{ month_events.size }} 场
-  </div>
-{% endif %}

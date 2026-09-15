@@ -140,7 +140,7 @@ title: 拨弦记｜演出情报
 
   {% if event.date < today %}
 
-    {% if past_count < 5 %}
+    {% if past_count < 3 %}
 
 <div
   class="event-item past-event"

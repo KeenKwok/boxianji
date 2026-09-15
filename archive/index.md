@@ -39,7 +39,7 @@ title: 演出档案
 
   {% endif %}
 
-<div style="margin:0.75em 0;">
+<div style="margin:0.75em 0 0.75em 14px;">
   <div style="line-height:1.35;margin-bottom:2px;">
     <strong>🎫 {{ event.date | date: "%m.%d" }}｜{{ event.city }}</strong>
     <small>｜<a href="{{ event.link }}">查看详情 ↗</a></small>

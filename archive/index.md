@@ -71,16 +71,29 @@ title: 演出档案
 {% for count_event in events %}
 {% assign count_year = count_event.date | date: "%Y" %}
 {% assign count_month = count_event.date | date: "%m" %}
+
 {% if count_year == current_year and count_month == current_month %}
 {% assign month_count = month_count | plus: 1 %}
 {% endif %}
+
 {% endfor %}
 
-### {{ current_month | plus: 0 }}月 · {{ month_count }}场
+<h3
+  class="archive-month"
+  data-year="{{ event_year }}"
+  data-month="{{ event_month }}"
+  style="margin-top:1.2em;margin-bottom:0.25em;font-size:1.05em;font-weight:600;">
+  {{ current_month | plus: 0 }}月 · {{ month_count }}场
+</h3>
 
 {% endif %}
 
-<div class="archive-event" data-year="{{ event_year }}" data-month="{{ event_month }}" data-city="{{ event.city }}" style="margin:0.75em 0 0.75em 14px;">
+<div
+  class="archive-event"
+  data-year="{{ event_year }}"
+  data-month="{{ event_month }}"
+  data-city="{{ event.city }}"
+  style="margin:0.75em 0 0.75em 14px;">
 
 <div style="line-height:1.35;margin-bottom:2px;">
 <strong>🎫 {{ event.date | date: "%m.%d" }}｜{{ event.city }}</strong>
@@ -110,6 +123,8 @@ title: 演出档案
 <script>
 function filterArchive(city) {
 
+  /* 更新城市胶囊 */
+
   document.querySelectorAll('.city-filter').forEach(function(button) {
     button.classList.remove('active');
   });
@@ -122,6 +137,9 @@ function filterArchive(city) {
     activeButton.classList.add('active');
   }
 
+
+  /* 筛选演出 */
+
   document.querySelectorAll('.archive-event').forEach(function(event) {
 
     if (city === 'all' || event.dataset.city === city) {
@@ -132,36 +150,13 @@ function filterArchive(city) {
 
   });
 
-  document.querySelectorAll('h3').forEach(function(monthTitle) {
 
-    var text = monthTitle.textContent.trim();
-    var match = text.match(/^(\d+)月/);
+  /* 重新计算每个月的场数 */
 
-    if (!match) {
-      return;
-    }
+  document.querySelectorAll('.archive-month').forEach(function(month) {
 
-    var monthNumber = match[1].padStart(2, '0');
-    var parent = monthTitle.parentElement;
-
-    var year = null;
-
-    var previous = parent.previousElementSibling;
-
-    while (previous) {
-
-      if (previous.tagName === 'H2') {
-        year = previous.textContent.trim();
-        break;
-      }
-
-      previous = previous.previousElementSibling;
-
-    }
-
-    if (!year) {
-      return;
-    }
+    var year = month.dataset.year;
+    var monthNumber = month.dataset.month;
 
     var events = document.querySelectorAll(
       '.archive-event[data-year="' +
@@ -174,23 +169,68 @@ function filterArchive(city) {
     var visibleCount = 0;
 
     events.forEach(function(event) {
+
       if (event.style.display !== 'none') {
         visibleCount++;
       }
+
     });
+
+
+    /* 有演出：显示月份并更新场数 */
 
     if (visibleCount > 0) {
 
-      parent.style.display = '';
+      month.style.display = '';
 
-      monthTitle.textContent =
-        parseInt(monthNumber, 10) + '月 · ' +
-        visibleCount + '场';
+      month.textContent =
+        parseInt(monthNumber, 10) +
+        '月 · ' +
+        visibleCount +
+        '场';
 
+    }
+
+
+    /* 没有演出：隐藏月份 */
+
+    else {
+
+      month.style.display = 'none';
+
+    }
+
+  });
+
+
+  /* 隐藏没有任何月份的年份 */
+
+  document.querySelectorAll('h2').forEach(function(yearTitle) {
+
+    var year = yearTitle.textContent.trim();
+
+    if (!/^\d{4}$/.test(year)) {
+      return;
+    }
+
+    var months = document.querySelectorAll(
+      '.archive-month[data-year="' + year + '"]'
+    );
+
+    var hasVisibleMonth = false;
+
+    months.forEach(function(month) {
+
+      if (month.style.display !== 'none') {
+        hasVisibleMonth = true;
+      }
+
+    });
+
+    if (hasVisibleMonth) {
+      yearTitle.style.display = '';
     } else {
-
-      parent.style.display = 'none';
-
+      yearTitle.style.display = 'none';
     }
 
   });

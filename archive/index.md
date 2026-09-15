@@ -13,38 +13,48 @@ title: 演出档案
 <a href="{{ '/attention/' | relative_url }}">← 返回演出情报</a>
 </div>
 
+
 {% assign events = site.data.attention | sort: "date" | reverse %}
-{% assign cities = events | map: "city" | uniq | sort %}
 
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2em;">
+<div id="archive-city-filter" style="
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:10px 0 2em;
+">
 
-<button class="city-filter active" data-city="all" onclick="filterArchive('all')">全部</button>
-
-{% for city in cities %}
-<button class="city-filter" data-city="{{ city }}" onclick="filterArchive('{{ city }}')">{{ city }}</button>
-{% endfor %}
+  <button
+    type="button"
+    data-city-filter="全部"
+    class="archive-city-button active"
+  >
+    全部
+  </button>
 
 </div>
 
 <style>
-.city-filter {
+
+.archive-city-button {
   border:1px solid #ddd;
+  border-radius:16px;
+  padding:5px 11px;
   background:#fff;
   color:#555;
-  border-radius:999px;
-  padding:5px 13px;
-  font-size:0.85em;
-  line-height:1.4;
+  font-size:0.78em;
+  line-height:1.2;
   cursor:pointer;
   -webkit-appearance:none;
 }
 
-.city-filter.active {
+.archive-city-button.active {
   background:#222;
   color:#fff;
   border-color:#222;
 }
+
 </style>
+
 
 {% assign current_year = "" %}
 {% assign current_month = "" %}
@@ -53,6 +63,7 @@ title: 演出档案
 
 {% assign event_year = event.date | date: "%Y" %}
 {% assign event_month = event.date | date: "%m" %}
+
 
 {% if event_year != current_year %}
 
@@ -63,12 +74,14 @@ title: 演出档案
 
 {% endif %}
 
+
 {% if event_month != current_month %}
 
 {% assign current_month = event_month %}
 {% assign month_count = 0 %}
 
 {% for count_event in events %}
+
 {% assign count_year = count_event.date | date: "%Y" %}
 {% assign count_month = count_event.date | date: "%m" %}
 
@@ -78,162 +91,365 @@ title: 演出档案
 
 {% endfor %}
 
+
 <h3
   class="archive-month"
   data-year="{{ event_year }}"
   data-month="{{ event_month }}"
-  style="margin-top:1.2em;margin-bottom:0.25em;font-size:1.05em;font-weight:600;">
+  style="
+    margin-top:1.2em;
+    margin-bottom:0.25em;
+    font-size:1.05em;
+    font-weight:600;
+  "
+>
   {{ current_month | plus: 0 }}月 · {{ month_count }}场
 </h3>
 
 {% endif %}
 
+
 <div
   class="archive-event"
   data-year="{{ event_year }}"
   data-month="{{ event_month }}"
-  data-city="{{ event.city }}"
-  style="margin:0.75em 0 0.75em 14px;">
+  data-city="{{ event.city | escape }}"
+  style="
+    margin:0.75em 0 0.75em 14px;
+  "
+>
 
-<div style="line-height:1.35;margin-bottom:2px;">
-<strong>🎫 {{ event.date | date: "%m.%d" }}｜{{ event.city }}</strong>
-<small>｜<a href="{{ event.link }}">查看详情 ↗</a></small>
-</div>
+  <div style="
+    line-height:1.35;
+    margin-bottom:2px;
+  ">
+    <strong>
+      🎫 {{ event.date | date: "%m.%d" }}｜{{ event.city }}
+    </strong>
 
-<div style="line-height:1.35;font-weight:600;">
-{{ event.title }}
-</div>
+    <small>
+      ｜<a href="{{ event.link }}">查看详情 ↗</a>
+    </small>
+  </div>
 
-{% if event.performers and event.performers.size > 0 %}
-<div style="margin-top:1px;font-size:0.78em;line-height:1.25;color:#777;">
-演奏者：{{ event.performers | join: " · " }}
-</div>
-{% endif %}
 
-{% if event.instruments and event.instruments.size > 0 %}
-<div style="margin-top:0;font-size:0.78em;line-height:1.25;color:#777;">
-乐器：{{ event.instruments | join: " · " }}
-</div>
-{% endif %}
+  <div style="
+    line-height:1.35;
+    font-weight:600;
+  ">
+    {{ event.title }}
+  </div>
+
+
+  {% if event.performers and event.performers.size > 0 %}
+
+  <div style="
+    margin-top:1px;
+    font-size:0.78em;
+    line-height:1.25;
+    color:#777;
+  ">
+    演奏者：{{ event.performers | join: " · " }}
+  </div>
+
+  {% endif %}
+
+
+  {% if event.instruments and event.instruments.size > 0 %}
+
+  <div style="
+    margin-top:0;
+    font-size:0.78em;
+    line-height:1.25;
+    color:#777;
+  ">
+    乐器：{{ event.instruments | join: " · " }}
+  </div>
+
+  {% endif %}
 
 </div>
 
 {% endfor %}
 
+
 <script>
-function filterArchive(city) {
 
-  /* 更新城市胶囊 */
+(function () {
 
-  document.querySelectorAll('.city-filter').forEach(function(button) {
-    button.classList.remove('active');
+  var filterBox =
+    document.getElementById('archive-city-filter');
+
+  if (!filterBox) return;
+
+
+  /* =========================
+     获取全部演出
+     ========================= */
+
+  var events =
+    document.querySelectorAll('.archive-event');
+
+  var cities = [];
+
+
+  /* =========================
+     收集城市
+     ========================= */
+
+  events.forEach(function (event) {
+
+    var city =
+      event.getAttribute('data-city');
+
+    if (
+      city &&
+      cities.indexOf(city) === -1
+    ) {
+      cities.push(city);
+    }
+
   });
 
-  var activeButton = document.querySelector(
-    '.city-filter[data-city="' + city + '"]'
-  );
 
-  if (activeButton) {
-    activeButton.classList.add('active');
+  /* =========================
+     按中文城市名称首字母排序
+     与 /attention/ 保持一致
+     ========================= */
+
+  cities.sort(function (a, b) {
+
+    return a.localeCompare(
+      b,
+      'zh-CN'
+    );
+
+  });
+
+
+  /* =========================
+     创建城市按钮
+     ========================= */
+
+  cities.forEach(function (city) {
+
+    var button =
+      document.createElement('button');
+
+    button.type = 'button';
+
+    button.textContent = city;
+
+    button.setAttribute(
+      'data-city-filter',
+      city
+    );
+
+    button.className =
+      'archive-city-button';
+
+    filterBox.appendChild(button);
+
+  });
+
+
+  var buttons =
+    filterBox.querySelectorAll(
+      '.archive-city-button'
+    );
+
+
+  /* =========================
+     应用城市筛选
+     ========================= */
+
+  function applyFilter(city) {
+
+
+    events.forEach(function (event) {
+
+      var eventCity =
+        event.getAttribute('data-city');
+
+      if (
+        city === '全部' ||
+        eventCity === city
+      ) {
+
+        event.style.display = '';
+
+      } else {
+
+        event.style.display = 'none';
+
+      }
+
+    });
+
+
+    /* =========================
+       更新城市按钮状态
+       ========================= */
+
+    buttons.forEach(function (button) {
+
+      var isActive =
+        button.getAttribute(
+          'data-city-filter'
+        ) === city;
+
+      if (isActive) {
+
+        button.classList.add('active');
+
+      } else {
+
+        button.classList.remove('active');
+
+      }
+
+    });
+
+
+    /* =========================
+       更新月份场次
+       ========================= */
+
+    document.querySelectorAll(
+      '.archive-month'
+    ).forEach(function (month) {
+
+      var year =
+        month.getAttribute('data-year');
+
+      var monthNumber =
+        month.getAttribute('data-month');
+
+
+      var monthEvents =
+        document.querySelectorAll(
+          '.archive-event[data-year="' +
+          year +
+          '"][data-month="' +
+          monthNumber +
+          '"]'
+        );
+
+
+      var visibleCount = 0;
+
+
+      monthEvents.forEach(function (event) {
+
+        if (
+          event.style.display !== 'none'
+        ) {
+          visibleCount++;
+        }
+
+      });
+
+
+      if (visibleCount > 0) {
+
+        month.style.display = '';
+
+        month.textContent =
+          parseInt(monthNumber, 10) +
+          '月 · ' +
+          visibleCount +
+          '场';
+
+      } else {
+
+        month.style.display = 'none';
+
+      }
+
+    });
+
+
+    /* =========================
+       更新年份显示
+       ========================= */
+
+    document.querySelectorAll('h2').forEach(
+      function (yearTitle) {
+
+        var year =
+          yearTitle.textContent.trim();
+
+        if (!/^\d{4}$/.test(year)) {
+          return;
+        }
+
+
+        var months =
+          document.querySelectorAll(
+            '.archive-month[data-year="' +
+            year +
+            '"]'
+          );
+
+
+        var hasVisibleMonth = false;
+
+
+        months.forEach(function (month) {
+
+          if (
+            month.style.display !== 'none'
+          ) {
+            hasVisibleMonth = true;
+          }
+
+        });
+
+
+        if (hasVisibleMonth) {
+
+          yearTitle.style.display = '';
+
+        } else {
+
+          yearTitle.style.display = 'none';
+
+        }
+
+      }
+    );
+
   }
 
 
-  /* 筛选演出 */
+  /* =========================
+     绑定城市按钮
+     ========================= */
 
-  document.querySelectorAll('.archive-event').forEach(function(event) {
+  buttons.forEach(function (button) {
 
-    if (city === 'all' || event.dataset.city === city) {
-      event.style.display = '';
-    } else {
-      event.style.display = 'none';
-    }
+    button.addEventListener(
+      'click',
+      function () {
 
-  });
+        applyFilter(
+          button.getAttribute(
+            'data-city-filter'
+          )
+        );
 
-
-  /* 重新计算每个月的场数 */
-
-  document.querySelectorAll('.archive-month').forEach(function(month) {
-
-    var year = month.dataset.year;
-    var monthNumber = month.dataset.month;
-
-    var events = document.querySelectorAll(
-      '.archive-event[data-year="' +
-      year +
-      '"][data-month="' +
-      monthNumber +
-      '"]'
+      }
     );
 
-    var visibleCount = 0;
-
-    events.forEach(function(event) {
-
-      if (event.style.display !== 'none') {
-        visibleCount++;
-      }
-
-    });
-
-
-    /* 有演出：显示月份并更新场数 */
-
-    if (visibleCount > 0) {
-
-      month.style.display = '';
-
-      month.textContent =
-        parseInt(monthNumber, 10) +
-        '月 · ' +
-        visibleCount +
-        '场';
-
-    }
-
-
-    /* 没有演出：隐藏月份 */
-
-    else {
-
-      month.style.display = 'none';
-
-    }
-
   });
 
 
-  /* 隐藏没有任何月份的年份 */
+  /* =========================
+     默认显示全部
+     ========================= */
 
-  document.querySelectorAll('h2').forEach(function(yearTitle) {
+  applyFilter('全部');
 
-    var year = yearTitle.textContent.trim();
+})();
 
-    if (!/^\d{4}$/.test(year)) {
-      return;
-    }
-
-    var months = document.querySelectorAll(
-      '.archive-month[data-year="' + year + '"]'
-    );
-
-    var hasVisibleMonth = false;
-
-    months.forEach(function(month) {
-
-      if (month.style.display !== 'none') {
-        hasVisibleMonth = true;
-      }
-
-    });
-
-    if (hasVisibleMonth) {
-      yearTitle.style.display = '';
-    } else {
-      yearTitle.style.display = 'none';
-    }
-
-  });
-
-}
 </script>

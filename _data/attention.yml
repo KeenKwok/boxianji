@@ -8,6 +8,17 @@
     - "吉他"
   link: "https://mp.weixin.qq.com/s/MWcn8QRkBP8Qt-7p6LMDfQ"
 
+- id: "20260927-taipei-liujin-suiyue-mandolin"
+  date: "2026-09-27"
+  city: "台北"
+  title: "流金歲月・曼陀林群星會"
+  performers:
+    - "羅懷聰"
+    - "臺灣曼陀林樂團"
+  instruments:
+    - "曼陀林"
+  link: "https://mp.weixin.qq.com/s/iCtYryg7soKyFLVjHWqdJQ"
+
 - id: "20260927-shanghai-zide-qinshe-qinweihewu"
   date: "2026-09-27"
   city: "上海"

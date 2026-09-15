@@ -5,7 +5,20 @@ title: 演出档案
 
 # 演出档案
 
-<div style="margin:-0.8em 0 2em;font-size:0.9em;">
+<div style="
+  margin-top:-0.8em;
+  margin-bottom:0.8em;
+  color:#777;
+  font-size:0.9em;
+  line-height:1.6;
+">
+  《拨弦记》收录的弹拨乐演出历史记录。
+</div>
+
+<div style="
+  margin-bottom:2em;
+  font-size:0.9em;
+">
   <a href="{{ '/attention/' | relative_url }}">← 返回演出情报</a>
 </div>
 
@@ -67,16 +80,3 @@ title: 演出档案
 </div>
 
 {% endfor %}
-
-<div style="
-  margin-top:3em;
-  padding-top:1.2em;
-  border-top:1px solid #e5e5e5;
-  color:#888;
-  font-size:0.82em;
-  line-height:1.7;
-">
-  《拨弦记》演出档案持续收录已经结束的弹拨乐演出。
-  <br>
-  演出数据来自《拨弦记》演出情报库，并持续更新。
-</div>

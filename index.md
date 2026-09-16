@@ -28,7 +28,7 @@ title: 首页
     <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
       🗂️ <a href="{{ '/archive/' | relative_url }}">演出档案</a>
     </div>
-    <div style="color:#666;line-height:1.6;margin-bottom:10px;">
+    <div style="color:#666;line-height:1.6;margin-bottom:6px;">
       保存全部历史演出记录，按年份、月份与城市提供检索。
     </div>
   </div>
@@ -37,8 +37,8 @@ title: 首页
     <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
       📰 <a href="{{ '/weekly/' | relative_url }}">每周简报</a>
     </div>
-    <div style="color:#666;line-height:1.6;margin-bottom:10px;">
-      记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
+    <div style="color:#666;line-height:1.6;margin-bottom:6px;">
+      记录弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
     </div>
   </div>
 

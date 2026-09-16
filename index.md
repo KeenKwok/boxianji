@@ -17,7 +17,7 @@ title: 首页
 
   <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;">
     <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
-      📅 演出情报
+      📅 <a href="{{ '/attention/' | relative_url }}">演出情报</a>
     </div>
     <div style="color:#666;line-height:1.6;margin-bottom:10px;">
       持续更新近期值得关注的弹拨乐演出，并支持按城市快速筛选。

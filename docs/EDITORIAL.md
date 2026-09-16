@@ -1,3 +1,7 @@
+---
+sitemap: false
+---
+
 # 《拨弦记》编辑操作手册（Editorial Handbook）
 
 > 一次采集，多次使用。

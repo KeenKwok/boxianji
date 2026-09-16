@@ -35,7 +35,7 @@ title: 首页
 
   <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;">
     <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
-      📰 <a href="{{ '/weekly/' | relative_url }}"每周简报</a>
+      📰 <a href="{{ '/weekly/' | relative_url }}">每周简报</a>
     </div>
     <div style="color:#666;line-height:1.6;margin-bottom:10px;">
       记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。

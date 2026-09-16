@@ -13,53 +13,37 @@ title: 首页
 
 ## 核心栏目
 
-<div style="
-  display:grid;
-  gap:14px;
-  margin:18px 0 26px;
-">
+<div style="display:grid;gap:14px;margin:18px 0 26px;">
 
-<div style="
-  border:1px solid #e5e5e5;
-  border-radius:12px;
-  padding:14px;
-">
+  <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;">
+    <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
+      📅 演出情报
+    </div>
+    <div style="color:#666;line-height:1.6;margin-bottom:10px;">
+      持续更新近期值得关注的弹拨乐演出，并支持按城市快速筛选。
+    </div>
+    <a href="{{ '/attention/' | relative_url }}">进入演出情报 →</a>
+  </div>
 
-**📅 演出情报**
+  <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;">
+    <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
+      🗂️ 演出档案
+    </div>
+    <div style="color:#666;line-height:1.6;margin-bottom:10px;">
+      保存全部历史演出记录，按年份、月份与城市提供检索。
+    </div>
+    <a href="{{ '/archive/' | relative_url }}">进入演出档案 →</a>
+  </div>
 
-持续更新近期值得关注的弹拨乐演出，并支持按城市快速筛选。
-
-→ [进入演出情报]({{ '/attention/' | relative_url }})
-
-</div>
-
-<div style="
-  border:1px solid #e5e5e5;
-  border-radius:12px;
-  padding:14px;
-">
-
-**🗂️ 演出档案**
-
-保存全部历史演出记录，按年份、月份与城市提供检索。
-
-→ [进入演出档案]({{ '/archive/' | relative_url }})
-
-</div>
-
-<div style="
-  border:1px solid #e5e5e5;
-  border-radius:12px;
-  padding:14px;
-">
-
-**📰 每周简报**
-
-记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
-
-→ [查看全部周报]({{ '/weekly/' | relative_url }})
-
-</div>
+  <div style="border:1px solid #e5e5e5;border-radius:12px;padding:14px;">
+    <div style="font-weight:600;font-size:1.02em;margin-bottom:6px;">
+      📰 每周简报
+    </div>
+    <div style="color:#666;line-height:1.6;margin-bottom:10px;">
+      记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
+    </div>
+    <a href="{{ '/weekly/' | relative_url }}">查看全部周报 →</a>
+  </div>
 
 </div>
 

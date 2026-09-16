@@ -7,6 +7,62 @@ title: 首页
 
 > 记录弹拨乐，发现弦上世界。
 
+持续关注世界弹拨乐领域的演出、艺术节、赛事、学术、乐器制作、非遗及人物资讯。
+
+---
+
+## 核心栏目
+
+<div style="
+  display:grid;
+  gap:14px;
+  margin:18px 0 26px;
+">
+
+<div style="
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:14px;
+">
+
+**📅 演出情报**
+
+持续更新近期值得关注的弹拨乐演出，并支持按城市快速筛选。
+
+→ [进入演出情报]({{ '/attention/' | relative_url }})
+
+</div>
+
+<div style="
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:14px;
+">
+
+**🗂️ 演出档案**
+
+保存全部历史演出记录，按年份、月份与城市提供检索。
+
+→ [进入演出档案]({{ '/archive/' | relative_url }})
+
+</div>
+
+<div style="
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:14px;
+">
+
+**📰 每周简报**
+
+记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
+
+→ [查看全部周报]({{ '/weekly/' | relative_url }})
+
+</div>
+
+</div>
+
 ---
 
 ## 演出情报
@@ -17,7 +73,9 @@ title: 首页
 {% assign fourteen_days = 1209600 %}
 {% assign has_recent = false %}
 
-{% for event in site.data.attention %}
+{% assign recent_events = site.data.attention | sort: "date" %}
+
+{% for event in recent_events %}
   {% assign event_time = event.date | date: "%s" %}
   {% assign diff = event_time | minus: today %}
 
@@ -72,19 +130,17 @@ title: 首页
 > 未来14天暂无收录演出。
 {% endunless %}
 
-→ [查看全部演出情报](attention/)
+→ [查看全部演出情报]({{ '/attention/' | relative_url }})
 
 ---
 
 ## 弹拨乐一周简报
 
-记录世界弹拨乐领域值得关注的艺术节、赛事、学术、乐器制作、非遗、演出及人物资讯。
-
 {% assign weekly_posts = site.pages | where_exp: "page", "page.path contains 'weekly/'" | sort: "path" | reverse %}
 
 ### 最新一期
 
-{% for post in weekly_posts limit:4 %}
+{% for post in weekly_posts %}
   {% unless post.path == "weekly/index.md" %}
 - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
     {% break %}
@@ -105,14 +161,14 @@ title: 首页
   {% endunless %}
 {% endfor %}
 
-→ [查看全部周报](weekly/)
+→ [查看全部周报]({{ '/weekly/' | relative_url }})
 
 ---
 
-<h2>开放接口</h2>
+## 开放接口
 
 <p style="font-size:0.82em;color:#777;margin-top:-6px;">
-  演出情报开放数据：
+演出情报开放数据：
 </p>
 
 <p style="margin-top:-4px;">

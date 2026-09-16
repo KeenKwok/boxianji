@@ -58,6 +58,16 @@
   instruments: []
   link: "https://mp.weixin.qq.com/s/JK25JIM5U7t5bR5oaBg-DQ"
 
+- id: "20260924-guangzhou-guoyue-songhuazhang"
+  date: "2026-09-24"
+  city: "广州"
+  title: "国乐颂华章·迎中秋国庆主题音乐会"
+  performers:
+    - "尊岭之秀乐团"
+  instruments:
+    - []
+  link: "https://mp.weixin.qq.com/s/sltAlEWPspCu1F_ID-H89Q"
+
 - id: "20260919-suzhou-fengmantian-shanxia-shanshang"
   date: "2026-09-19"
   city: "苏州"

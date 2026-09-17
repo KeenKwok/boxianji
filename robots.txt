@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://keenkwok.github.io/boxianji/sitemap.xml
+Sitemap: https://boxianji.guitarkk.com/sitemap.xml

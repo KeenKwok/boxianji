@@ -1,3 +1,13 @@
+- id: "20260926-hefei-wangzhongshan-wangguxiang"
+  date: "2026-09-26"
+  city: "合肥"
+  title: "望故乡·王中山古筝音乐会·合肥站"
+  performers:
+    - "王中山"
+  instruments:
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/q-Ywu2q68tWje4iOjnjI6g"
+
 - id: "20260927-guangzhou-goran-sollscher"
   date: "2026-09-27"
   city: "广州"

@@ -49,6 +49,33 @@
     - "吉他"
   link: "https://mp.weixin.qq.com/s/yjqkLZfPWOP7h5uCMZPvaA"
 
+- id: "20260926-guangzhou-huahaoyueyuan"
+  date: "2026-09-26"
+  city: "广州"
+  title: "中秋·花好月圆音乐会"
+  performers:
+    - "尊岭之秀乐团"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/-iTZOBEe7xshsnlxz5RZyw"
+
+- id: "20260925-shenzhen-huahaoyueyuan-night"
+  date: "2026-09-25"
+  city: "深圳"
+  title: "中秋·花好月圆音乐会·下午场"
+  performers:
+    - "尊岭之秀乐团"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/-iTZOBEe7xshsnlxz5RZyw"
+
+- id: "20260925-shenzhen-huahaoyueyuan"
+  date: "2026-09-25"
+  city: "深圳"
+  title: "中秋·花好月圆音乐会·夜晚场"
+  performers:
+    - "尊岭之秀乐团"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/-iTZOBEe7xshsnlxz5RZyw"
+
 - id: "20260925-shenzhen-qiuyun-gujin-sidamingzhu"
   date: "2026-09-25"
   city: "深圳"

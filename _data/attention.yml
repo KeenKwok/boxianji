@@ -1,3 +1,12 @@
+- id: "20260927-beijing-weilaizhixing-guitar"
+  date: "2026-09-27"
+  city: "北京"
+  title: "未来之星古典吉他名家师生音乐会"
+  performers: []
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/8fI2ZHuh86NLwQMbib-nlA"
+
 - id: "20260926-hefei-wangzhongshan-wangguxiang"
   date: "2026-09-26"
   city: "合肥"

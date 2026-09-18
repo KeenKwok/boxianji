@@ -43,7 +43,7 @@ title: 演出情报
 
 <div id="upcoming-events">
 
-{% assign upcoming_events = site.data.attention | sort: "date" | reverse %}
+{% assign upcoming_events = site.data.attention | sort: "date" %}
 
 {% for event in upcoming_events %}
 

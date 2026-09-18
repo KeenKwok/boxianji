@@ -1,3 +1,15 @@
+- id: "20260924-beijing-wangjian-goran-sollscher"
+  date: "2026-09-24"
+  city: "北京"
+  title: "王健 × 约兰·索舍尔（Göran Söllscher）大提琴、吉他二重奏"
+  performers:
+    - "王健"
+    - "约兰·索舍尔"
+  instruments:
+    - "大提琴"
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/ZX89_JZaGheNME_ulFkIzw"
+
 - id: "20260927-beijing-weilaizhixing-guitar"
   date: "2026-09-27"
   city: "北京"

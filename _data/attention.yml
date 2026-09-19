@@ -1,3 +1,16 @@
+- id: "20260930-zhengzhou-world-pankonghou"
+  date: "2026-09-30"
+  city: "郑州"
+  title: "世界泛箜篌类乐器名家音乐会"
+  performers:
+    - "Seifollah Shokri"
+    - "Şirin Pancaroğlu"
+    - "Diabel Cissokho"
+    - "鲁璐"
+  instruments:
+    - "箜篌"
+  link: "https://mp.weixin.qq.com/s/sZ-dpA9-AHhr-gC4MXodiw"
+
 - id: "20260924-beijing-wangjian-goran-sollscher"
   date: "2026-09-24"
   city: "北京"

@@ -1,3 +1,14 @@
+- id: "20261004-hongkong-tanle-15"
+  date: "2026-10-04"
+  city: "香港"
+  title: "彈樂·作樂多端十五載·音樂會"
+  performers:
+    - "彈樂"
+  instruments:
+    - "柳琴"
+    - "中阮"
+  link: "https://mp.weixin.qq.com/s/LpIIDA_yQ0tek4rRMX--zA"
+
 - id: "20260930-zhengzhou-world-pankonghou"
   date: "2026-09-30"
   city: "郑州"

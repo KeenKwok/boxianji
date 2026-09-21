@@ -1,3 +1,23 @@
+- id: "20261005-taipei-kyuhee-park-guitar-recital"
+  date: "2026-10-05"
+  city: "台北"
+  title: "朴葵姬吉他獨奏會"
+  performers:
+    - "朴葵姬"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/9BHoEnFXCuKtRu3vhuFTTQ"
+
+- id: "20261004-taichung-kyuhee-park-guitar-recital"
+  date: "2026-10-04"
+  city: "台中"
+  title: "朴葵姬吉他獨奏會"
+  performers:
+    - "朴葵姬"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/9BHoEnFXCuKtRu3vhuFTTQ"
+
 - id: "20261004-hongkong-tanle-15"
   date: "2026-10-04"
   city: "香港"

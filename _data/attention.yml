@@ -1,3 +1,16 @@
+- id: "20261005-beijing-zideqinshe-zhanhan-qiyuan-outdoor"
+  date: "2026-10-05"
+  city: "北京"
+  title: "自得琴社《战汉·启元》国风户外音乐会"
+  performers:
+    - "自得琴社"
+  instruments:
+    - "古琴"
+    - "古筝"
+    - "中阮"
+    - "琵琶"
+  link: "https://mp.weixin.qq.com/s/CkZGqWHFoFONNCVvax5cVw"
+
 - id: "20261005-taipei-kyuhee-park-guitar-recital"
   date: "2026-10-05"
   city: "台北"

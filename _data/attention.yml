@@ -1,3 +1,33 @@
+- id: "20261005-zhengzhou-wangzhongshan-wangguxiang-2026"
+  date: "2026-10-05"
+  city: "郑州"
+  title: "“敦煌国乐”望故乡2026——王中山古筝音乐会·郑州站"
+  performers:
+    - "王中山"
+    - "王中喜"
+    - "王中华"
+    - "计璐"
+    - "郑瑀"
+  instruments:
+    - "古筝"
+    - "三弦"
+  link: "https://mp.weixin.qq.com/s/_w0aDEerSv7WRbnxvzQ6Vw"
+
+- id: "20261003-wuxi-wangzhongshan-wangguxiang-2026"
+  date: "2026-10-03"
+  city: "无锡"
+  title: "“敦煌国乐”望故乡2026——王中山古筝音乐会·无锡站"
+  performers:
+    - "王中山"
+    - "王中喜"
+    - "王中华"
+    - "计璐"
+    - "郑瑀"
+  instruments:
+    - "古筝"
+    - "三弦"
+  link: "https://mp.weixin.qq.com/s/_w0aDEerSv7WRbnxvzQ6Vw"
+
 - id: "20261005-beijing-zideqinshe-zhanhan-qiyuan-outdoor"
   date: "2026-10-05"
   city: "北京"

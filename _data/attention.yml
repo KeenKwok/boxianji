@@ -1,3 +1,29 @@
+- id: "20261017-guangzhou-wumanni-zhongkai-guitar-accordion-duo"
+  date: "2026-10-17"
+  city: "广州"
+  title: "吴曼妮仲凯古典吉他手风琴二重奏·广州场"
+  performers:
+    - "吴曼妮"
+    - "仲凯"
+    - "罗舒南"
+  instruments:
+    - "吉他"
+    - "手风琴"
+  link: "https://mp.weixin.qq.com/s/jzJd3S9b7oCIIobnOzUF8Q"
+
+- id: "20261017-foshan-golden-hour-wumanni-zhongkai-guitar-accordion-duo"
+  date: "2026-10-17"
+  city: "佛山"
+  title: "【2026第六届佛山城市艺术季】Golden Hour黄金时刻-古典吉他手风琴二重奏"
+  performers:
+    - "吴曼妮"
+    - "仲凯"
+    - "罗舒南"
+  instruments:
+    - "吉他"
+    - "手风琴"
+  link: "https://mp.weixin.qq.com/s/jzJd3S9b7oCIIobnOzUF8Q"
+
 - id: "20261005-zhengzhou-wangzhongshan-wangguxiang-2026"
   date: "2026-10-05"
   city: "郑州"

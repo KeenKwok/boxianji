@@ -1,3 +1,15 @@
+- id: "20261011-tangshan-shiqingciyun-harp-voice"
+  date: "2026-10-11"
+  city: "唐山"
+  title: "诗情词韵·竖琴与声乐音乐会"
+  performers:
+    - "甘露露"
+    - "孙诗萌"
+  instruments:
+    - "竖琴"
+    - "声乐"
+  link: "https://mp.weixin.qq.com/s/cSiKVrghgVa1HKf2891MPQ"
+
 - id: "20261017-guangzhou-wumanni-zhongkai-guitar-accordion-duo"
   date: "2026-10-17"
   city: "广州"

@@ -1,3 +1,20 @@
+- id: "20261014-beijing-anoushka-shankar-and-friends"
+  date: "2026-10-14"
+  city: "北京"
+  title: "第29届北京国际音乐节 阿努什卡·香卡与朋友们的专场音乐会"
+  performers:
+    - "阿努什卡·香卡"
+    - "阿伦·库马尔·高什"
+    - "托马斯·沃尔特·法默"
+    - "萨拉西·科瓦尔"
+  instruments:
+    - "西塔琴"
+    - "单簧管"
+    - "低音提琴"
+    - "打击乐"
+    - "键盘"
+  link: "https://mp.weixin.qq.com/s/5_iVIJza6uLHn0TbbCVzlA"
+
 - id: "20261011-xian-noguang-shushi-wuhuaichen-guqin"
   date: "2026-10-11"
   city: "西安"

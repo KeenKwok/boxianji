@@ -1,3 +1,22 @@
+- id: "20261016-hongkong-ponpon-chen-jazz-quintet"
+  date: "2026-10-16"
+  city: "香港"
+  title: "Ponpon陈芃瑄香港爵士五重奏"
+  performers:
+    - "陈芃瑄"
+    - "Aaron Provisor"
+    - "Jacob Chung"
+    - "Caleb Tobocman"
+    - "Joe Peri"
+  instruments:
+    - "吉他"
+    - "钢琴"
+    - "萨克斯"
+    - "贝斯"
+    - "打击乐"
+  link: "https://mp.weixin.qq.com/s/xsfcHUCC3vzRwls4HTX4aA"
+
+
 - id: "20261014-beijing-anoushka-shankar-and-friends"
   date: "2026-10-14"
   city: "北京"

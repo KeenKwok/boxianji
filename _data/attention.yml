@@ -1,3 +1,12 @@
+- id: "20261001-dongguan-guoyue-lizan-minyue-concert"
+  date: "2026-10-01"
+  city: "东莞"
+  title: "国乐礼赞·国庆民乐音乐会"
+  performers:
+    - "尊岭之秀乐团"
+  instruments: []
+  link: "https://mp.weixin.qq.com/s/yo_gjk0uNZj_hPELIw6RYg"
+
 - id: "20261016-hongkong-ponpon-chen-jazz-quintet"
   date: "2026-10-16"
   city: "香港"
@@ -15,7 +24,6 @@
     - "贝斯"
     - "打击乐"
   link: "https://mp.weixin.qq.com/s/xsfcHUCC3vzRwls4HTX4aA"
-
 
 - id: "20261014-beijing-anoushka-shankar-and-friends"
   date: "2026-10-14"

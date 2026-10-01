@@ -1,3 +1,20 @@
+- id: "20261016-shanghai-anoushka-shankar-in-concert"
+  date: "2026-10-16"
+  city: "上海"
+  title: "世界音乐传奇阿努什卡·香卡2026上海音乐会"
+  performers:
+    - "阿努什卡·香卡"
+    - "阿伦·高什"
+    - "汤姆·法默"
+    - "萨拉西·科瓦尔"
+  instruments:
+    - "西塔琴"
+    - "单簧管"
+    - "低音提琴"
+    - "打击乐"
+    - "键盘"
+  link: "https://mp.weixin.qq.com/s/HHDkEfWJMuNnEMaL_tGAHA"
+
 - id: "20261001-dongguan-guoyue-lizan-minyue-concert"
   date: "2026-10-01"
   city: "东莞"

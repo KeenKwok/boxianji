@@ -1,3 +1,20 @@
+- id: "20261018-guangzhou-anoushka-shankar-guangzhou-jazz"
+  date: "2026-10-18"
+  city: "广州"
+  title: "2026广州爵士音乐季 特别钜献 世界音乐传奇 Anoushka Shankar 阿努什卡·香卡"
+  performers:
+    - "阿努什卡·香卡"
+    - "阿伦·高什"
+    - "汤姆·法默"
+    - "萨拉西·科瓦尔"
+  instruments:
+    - "西塔琴"
+    - "单簧管"
+    - "低音提琴"
+    - "打击乐"
+    - "键盘"
+  link: "https://mp.weixin.qq.com/s/wo5OS1UTgOjINJ9X4n-nQQ"
+
 - id: "20261018-suzhou-jiaxue-qinchuan-family-concert"
   date: "2026-10-18"
   city: "苏州"

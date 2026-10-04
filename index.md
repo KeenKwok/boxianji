@@ -133,6 +133,7 @@ title: 首页
 {% for post in weekly_posts %}
   {% unless post.path == "weekly/index.md" %}
     {% if latest_found %}
+      {% if weekly_count < 3 %}
 - [{{ post.title }}]({{ site.baseurl }}{{ post.url }})
     {% else %}
       {% assign latest_found = true %}

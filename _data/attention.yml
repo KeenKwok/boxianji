@@ -1,3 +1,18 @@
+- id: "20261017-beijing-hehezhimei-jiwei-zheng-concert"
+  date: "2026-10-17"
+  city: "北京"
+  title: "《和合之美》——吉炜筝乐会"
+  performers:
+    - "吉炜"
+    - "李舒婷"
+    - "栾景旭"
+    - "王梓硕"
+  instruments:
+    - "古筝"
+    - "钢琴"
+    - "打击乐"
+  link: "https://mp.weixin.qq.com/s/pmxAp0NpMllDLeFawztgWQ"
+
 - id: "20261017-jiangyin-aidezhengyan-liule-jinxi-zhengensemble"
   date: "2026-10-17"
   city: "江阴"

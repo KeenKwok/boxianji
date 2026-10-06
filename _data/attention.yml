@@ -1,3 +1,17 @@
+- id: "20261018-chengdu-gujinzhongwai-guqin-guitar-concert"
+  date: "2026-10-18"
+  city: "成都"
+  title: "古今中外·袁中平古琴与吉他音乐演唱会"
+  performers:
+    - "袁中平"
+    - "李铄铭"
+    - "西瓜"
+  instruments:
+    - "古琴"
+    - "吉他"
+    - "打击乐"
+  link: "https://mp.weixin.qq.com/s/0lMmUDrGqyMmQSowblvNFw"
+
 - id: "20261017-beijing-hehezhimei-jiwei-zheng-concert"
   date: "2026-10-17"
   city: "北京"

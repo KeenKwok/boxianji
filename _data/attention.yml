@@ -1,3 +1,17 @@
+- id: "20261011-miaoli-shuangxianzhishi-kyuhee-park-hsinchu-symphony"
+  date: "2026-10-11"
+  city: "苗栗县"
+  title: "2026第三屆愛樂築城慈善音樂會《雙弦之詩》"
+  performers:
+    - "新竹市立交響樂團"
+    - "李振聲"
+    - "朴葵姬"
+    - "帕加諾"
+  instruments:
+    - "吉他"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/ev4ZA4j3kboLpvTqOCZ1lg"
+
 - id: "20261020-hongkong-sean-shibe-ema-nikolovska-orlando-variations"
   date: "2026-10-20"
   city: "香港"

@@ -1,3 +1,16 @@
+- id: "20261016-hongkong-alvaro-pierri-classical-guitar"
+  date: "2026-10-16"
+  city: "香港"
+  title: "Alvaro Pierri 古典吉他音乐会（香港 Joy of Music 音乐节）"
+  performers:
+    - "Alvaro Pierri"
+    - "Haoqi Li"
+    - "Giuseppe Andaloro"
+  instruments:
+    - "吉他"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/RMgjkVhvkIDOjd8nu4Ihfg"
+
 - id: "20261011-miaoli-shuangxianzhishi-kyuhee-park-hsinchu-symphony"
   date: "2026-10-11"
   city: "苗栗县"

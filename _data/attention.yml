@@ -1,3 +1,21 @@
+- id: "20261023-macau-shi-ge-lisboa-string-trio-sofia-vitoria"
+  date: "2026-10-23"
+  city: "澳门"
+  title: "诗.歌——里斯本弦乐三重奏与苏菲亚.维多利亚"
+  performers:
+    - "里斯本弦乐三重奏"
+    - "祖斯·比索图"
+    - "卡洛斯·巴雷托"
+    - "马克·普拉内尔斯"
+    - "苏菲亚·维多利亚"
+  instruments:
+    - "吉他"
+    - "鲁特琴"
+    - "西塔琴"
+    - "低音提琴"
+    - "打击乐"
+  link: "https://mp.weixin.qq.com/s/8GSrRyq2NoCMDPvKKgiY5g"
+
 - id: "20261016-hongkong-alvaro-pierri-classical-guitar"
   date: "2026-10-16"
   city: "香港"

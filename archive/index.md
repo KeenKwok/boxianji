@@ -149,7 +149,7 @@ title: 演出档案
     line-height:1.25;
     color:#777;
   ">
-    演奏者：{{ event.performers | join: " · " }}
+    演奏者：{{ event.performers | join: " | " }}
   </div>
 
   {% endif %}

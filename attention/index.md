@@ -78,7 +78,7 @@ title: 演出情报
     line-height:1.25;
     color:#777;
   ">
-    演奏者：{{ event.performers | join: " · " }}
+    演奏者：{{ event.performers | join: " | " }}
   </div>
   {% endif %}
 
@@ -174,7 +174,7 @@ title: 演出情报
     line-height:1.25;
     color:#999;
   ">
-    演奏者：{{ event.performers | join: " · " }}
+    演奏者：{{ event.performers | join: " | " }}
   </div>
   {% endif %}
 

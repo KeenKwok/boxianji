@@ -1,3 +1,15 @@
+- id: "20261024-shanghai-haishang-yayue-luxiaozi-guqin-sanxian"
+  date: "2026-10-24"
+  city: "上海"
+  title: "海上雅乐·古弦心声——陆笑姿独奏音乐会"
+  performers:
+    - "陆笑姿"
+    - "徐凤霞"
+  instruments:
+    - "古琴"
+    - "三弦"
+  link: "https://mp.weixin.qq.com/s/SNfHwtIecSi0wFGN6JJecQ"
+
 - id: "20261023-macau-shi-ge-lisboa-string-trio-sofia-vitoria"
   date: "2026-10-23"
   city: "澳门"

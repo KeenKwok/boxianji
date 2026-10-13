@@ -1,3 +1,15 @@
+- id: "20261028-taichung-xianjian-zhijian-guitar-piano-duo"
+  date: "2026-10-28"
+  city: "台中"
+  title: "弦鍵之間 吉他與鋼琴二重奏音樂會"
+  performers:
+    - "劉軒濂"
+    - "黃馨霈"
+  instruments:
+    - "吉他"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/bB1CZ-MRFTfffEz8dZDFpQ"
+
 - id: "20261025-wuhan-chutian-jiangshui-zhiyin-xinchuan-guqin"
   date: "2026-10-25"
   city: "武汉"

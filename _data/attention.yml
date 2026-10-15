@@ -1,3 +1,19 @@
+- id: "20261029-wuhan-shiyijie-italian-canzone"
+  date: "2026-10-29"
+  city: "武汉"
+  title: "爱的倾诉—石倚洁意大利民谣专场音乐会"
+  performers:
+    - "石倚洁"
+    - "匡俊宏"
+    - "许可卿"
+    - "文茗"
+  instruments:
+    - "男高音"
+    - "吉他"
+    - "手风琴"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/NAyOZXZXBbcyeQxBT-1paA"
+
 - id: "20261028-taichung-xianjian-zhijian-guitar-piano-duo"
   date: "2026-10-28"
   city: "台中"

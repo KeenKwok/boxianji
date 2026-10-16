@@ -1,3 +1,23 @@
+- id: "20261031-kaohsiung-forty-fingers-asian-tour-2026"
+  date: "2026-10-31"
+  city: "高雄"
+  title: "義大利指彈天團-40 Fingers亞洲巡迴演出·高雄場"
+  performers:
+    - "40 Fingers"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/KyhrAjr_e7-fN1CAxfWQQA"
+
+- id: "20261030-xinbei-forty-fingers-asian-tour-2026"
+  date: "2026-10-30"
+  city: "新北"
+  title: "義大利指彈天團-40 Fingers亞洲巡迴演出·台北場"
+  performers:
+    - "40 Fingers"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/KyhrAjr_e7-fN1CAxfWQQA"
+
 - id: "20261029-wuhan-shiyijie-italian-canzone"
   date: "2026-10-29"
   city: "武汉"

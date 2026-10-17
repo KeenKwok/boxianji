@@ -1,3 +1,37 @@
+- id: "20261030-hongkong-assad-duo-guitar-recital"
+  date: "2026-10-30"
+  city: "香港"
+  title: "亚艺无疆2026：《阿萨德二重奏结他演奏会》"
+  performers:
+    - "阿萨德二重奏"
+    - "奥迪亚·阿萨德"
+    - "沙治奥·阿萨德"
+    - "万幸"
+  instruments:
+    - "吉他"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/S1Og-_TKmeBH6dupDBcNwg"
+
+- id: "20261031-hongkong-odair-assad-guitar-masterclass"
+  date: "2026-10-31"
+  city: "香港"
+  title: "奥迪亚·阿萨德吉他大师班"
+  performers:
+    - "奥迪亚·阿萨德"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/S1Og-_TKmeBH6dupDBcNwg"
+
+- id: "20261031-hongkong-sergio-assad-guitar-masterclass"
+  date: "2026-10-31"
+  city: "香港"
+  title: "沙治奥·阿萨德吉他大师班"
+  performers:
+    - "沙治奥·阿萨德"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/S1Og-_TKmeBH6dupDBcNwg"
+
 - id: "20261031-kaohsiung-forty-fingers-asian-tour-2026"
   date: "2026-10-31"
   city: "高雄"

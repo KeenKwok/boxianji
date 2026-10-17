@@ -1,3 +1,15 @@
+- id: "20261024-xiamen-wangchunfeng-guqin-piano"
+  date: "2026-10-24"
+  city: "厦门"
+  title: "望春风—古琴与钢琴的对话"
+  performers:
+    - "王嘉颖"
+    - "陈昱欣"
+  instruments:
+    - "古琴"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/o4VCG6MruJw1XstTuhPA2w"
+
 - id: "20261030-hongkong-assad-duo-guitar-recital"
   date: "2026-10-30"
   city: "香港"

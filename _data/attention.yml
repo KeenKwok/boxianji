@@ -1,3 +1,17 @@
+- id: "20261031-wuhan-chufenghanyun-plucked-strings"
+  date: "2026-10-31"
+  city: "武汉"
+  title: "第十五届琴台音乐节·楚风汉韵弹拨国乐音乐会"
+  performers:
+    - "李孛铖"
+    - "焦麒睿"
+  instruments:
+    - "柳琴"
+    - "中阮"
+    - "古筝"
+    - "伽倻琴"
+  link: "https://mp.weixin.qq.com/s/3vni1rzJvGzaJ3IgPgptgw"
+
 - id: "20261024-xiamen-wangchunfeng-guqin-piano"
   date: "2026-10-24"
   city: "厦门"

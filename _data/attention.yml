@@ -1,3 +1,27 @@
+- id: "20261106-beijing-liushinian-xiange-assad-brothers-guitar"
+  date: "2026-11-06"
+  city: "北京"
+  title: "六十年弦歌—阿萨德兄弟吉他二重奏音乐会"
+  performers:
+    - "阿萨德兄弟"
+    - "塞尔吉奥·阿萨德"
+    - "奥黛尔·阿萨德"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/V7WVAQnGF_ddyq1G_Qr-ig"
+
+- id: "20261104-shanghai-chuanqi-shuangxing-assad-brothers-guitar"
+  date: "2026-11-04"
+  city: "上海"
+  title: "传奇双星——阿萨德兄弟吉他二重奏音乐会"
+  performers:
+    - "阿萨德兄弟"
+    - "塞尔吉奥·阿萨德"
+    - "奥黛尔·阿萨德"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/V7WVAQnGF_ddyq1G_Qr-ig"
+
 - id: "20261101-guangzhou-tianlai-dunhuang-museum-sounds"
   date: "2026-11-01"
   city: "广州"

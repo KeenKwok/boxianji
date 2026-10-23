@@ -1,3 +1,39 @@
+- id: "20261108-hangzhou-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-08"
+  city: "杭州"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·杭州场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/VReLzIZt3Yu0BMl5b_jZ4Q"
+
+- id: "20261106-nanjing-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-06"
+  city: "南京"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·南京场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/VReLzIZt3Yu0BMl5b_jZ4Q"
+
+- id: "20261105-shanghai-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-05"
+  city: "上海"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·上海场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/VReLzIZt3Yu0BMl5b_jZ4Q"
+
 - id: "20261106-beijing-liushinian-xiange-assad-brothers-guitar"
   date: "2026-11-06"
   city: "北京"

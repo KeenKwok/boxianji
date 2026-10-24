@@ -1,3 +1,31 @@
+- id: "20261106-shenzhen-xianhuaguyun-fengmantian-ruxinqu-yucunxiaoxue"
+  date: "2026-11-06"
+  city: "深圳"
+  title: "弦画·古韵 冯满天阮咸音乐会·依心曲·渔村小雪"
+  performers:
+    - "冯满天"
+    - "于雷"
+    - "赵冰"
+  instruments:
+    - "阮"
+    - "打击乐"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/r41FhOtWHCe7F0XOHeHzSw"
+
+- id: "20261105-shenzhen-xianhuaguyun-fengmantian-jiangjinjiu-shankoududou"
+  date: "2026-11-05"
+  city: "深圳"
+  title: "弦画·古韵 冯满天阮咸音乐会·将进酒·山口待渡"
+  performers:
+    - "冯满天"
+    - "于雷"
+    - "赵冰"
+  instruments:
+    - "阮"
+    - "打击乐"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/r41FhOtWHCe7F0XOHeHzSw"
+
 - id: "20261108-hangzhou-xiantandong-pengjingxuan-boldachev-harp-guzheng"
   date: "2026-11-08"
   city: "杭州"

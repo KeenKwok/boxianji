@@ -1,3 +1,35 @@
+- id: "20261108-guangzhou-ningguang-shushi-wuhuaichen-guqin"
+  date: "2026-11-08"
+  city: "广州"
+  title: "凝光漱石——武怀琛古琴专场演奏会·广州场"
+  performers:
+    - "武怀琛"
+  instruments:
+    - "古琴"
+  link: "https://mp.weixin.qq.com/s/pI1xtBhyBRZUSP5J2XLPIg"
+
+- id: "20261107-foshan-ningguang-shushi-wuhuaichen-guqin"
+  date: "2026-11-07"
+  city: "佛山"
+  title: "凝光漱石——武怀琛古琴专场演奏会·佛山场"
+  performers:
+    - "武怀琛"
+  instruments:
+    - "古琴"
+  link: "https://mp.weixin.qq.com/s/pI1xtBhyBRZUSP5J2XLPIg"
+
+- id: "20261106-shenzhen-ningguang-shushi-wuhuaichen-guqin"
+  date: "2026-11-06"
+  city: "深圳"
+  title: "凝光漱石——武怀琛古琴专场演奏会·深圳场"
+  performers:
+    - "武怀琛"
+    - "贾诗艺"
+    - "王鹏"
+  instruments:
+    - "古琴"
+  link: "https://mp.weixin.qq.com/s/pI1xtBhyBRZUSP5J2XLPIg"
+
 - id: "20261106-shenzhen-xianhuaguyun-fengmantian-ruxinqu-yucunxiaoxue"
   date: "2026-11-06"
   city: "深圳"

@@ -1,3 +1,22 @@
+- id: "20261107-fuzhou-wangzhongshan-wangguxiang-2026"
+  date: "2026-11-07"
+  city: "福州"
+  title: "【敦煌国乐】望故乡2026——王中山古筝音乐会"
+  performers:
+    - "王中山"
+    - "王中喜"
+    - "王中华"
+    - "计璐"
+    - "郑瑀"
+  instruments:
+    - "古筝"
+    - "曲胡"
+    - "三弦"
+    - "钢琴"
+    - "打击乐"
+    - "中胡"
+  link: "https://mp.weixin.qq.com/s/zlStm72PZ4g5nLP58591Bg"
+
 - id: "20261107-shenzhen-zideqinshe-qinweihewu-zhanhan-qiyuan"
   date: "2026-11-07"
   city: "深圳"

@@ -1,3 +1,19 @@
+- id: "20261108-beijing-yueyouyuan-fengmantian-ruan-improv"
+  date: "2026-11-08"
+  city: "北京"
+  title: "《樂游园》阮咸即兴音乐会"
+  performers:
+    - "冯满天"
+    - "李文博"
+    - "冯朗庭"
+  instruments:
+    - "阮"
+    - "中国大鼓"
+    - "打击乐"
+    - "键盘"
+    - "电子音乐"
+  link: "https://mp.weixin.qq.com/s/hHRODe4GHNMpaMisu4jsmw"
+
 - id: "20261108-dongguan-tianlai-dunhuang-museum-sounds"
   date: "2026-11-08"
   city: "东莞"

@@ -1,3 +1,19 @@
+- id: "20261108-hangzhou-xianxiangwuxiong-yangyang-guqin-solo"
+  date: "2026-11-08"
+  city: "杭州"
+  title: "弦象无穷——央央古筝独奏音乐会"
+  performers:
+    - "央央"
+    - "栾景旭"
+    - "王梓硕"
+    - "缪米芮"
+    - "柯子娴"
+  instruments:
+    - "古筝"
+    - "钢琴"
+    - "打击乐"
+  link: "https://mp.weixin.qq.com/s/0uSIsS7Av9Hle_bqJXg8MA"
+
 - id: "20261108-beijing-yueyouyuan-fengmantian-ruan-improv"
   date: "2026-11-08"
   city: "北京"

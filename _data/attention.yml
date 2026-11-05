@@ -1,3 +1,21 @@
+- id: "20261113-beijing-yihaishiyi-plucked-strings"
+  date: "2026-11-13"
+  city: "北京"
+  title: "《艺海拾遗》弹拨乐专场"
+  performers:
+    - "中国煤矿文工团民乐团"
+    - "刘恋"
+    - "杨曦"
+  instruments:
+    - "琵琶"
+    - "古筝"
+    - "古琴"
+    - "柳琴"
+    - "扬琴"
+    - "三弦"
+    - "中阮"
+  link: "https://mp.weixin.qq.com/s/crcJ3AAAXSJU_ILfCJ-WNg"
+
 - id: "20261113-chengdu-tuiyinzhijian-kuanghonglin-pipa"
   date: "2026-11-13"
   city: "成都"

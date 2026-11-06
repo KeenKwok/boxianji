@@ -1,3 +1,51 @@
+- id: "20261117-wuxi-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-17"
+  city: "无锡"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·无锡场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/8GOJIc6QrjCSEjF55C4_3A"
+
+- id: "20261115-chengdu-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-15"
+  city: "成都"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·成都场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/8GOJIc6QrjCSEjF55C4_3A"
+
+- id: "20261114-xiamen-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-14"
+  city: "厦门"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·厦门场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/8GOJIc6QrjCSEjF55C4_3A"
+
+- id: "20261113-guangzhou-xiantandong-pengjingxuan-boldachev-harp-guzheng"
+  date: "2026-11-13"
+  city: "广州"
+  title: "“弦弹西东”碰碰和亚历山大·波达切夫竖琴古筝重奏音乐会·广州场"
+  performers:
+    - "碰碰彭碰彭"
+    - "亚历山大·波达切夫"
+  instruments:
+    - "竖琴"
+    - "古筝"
+  link: "https://mp.weixin.qq.com/s/8GOJIc6QrjCSEjF55C4_3A"
+
 - id: "20261113-beijing-yihaishiyi-plucked-strings"
   date: "2026-11-13"
   city: "北京"

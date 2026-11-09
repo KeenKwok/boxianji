@@ -1,3 +1,15 @@
+- id: "20261121-beijing-string-theory-boldachev-harp-strings"
+  date: "2026-11-21"
+  city: "北京"
+  title: "《弦乐理论》——亚历山大·波达切夫竖琴与弦乐跨界音乐会"
+  performers:
+    - "亚历山大·波达切夫"
+    - "中央芭蕾舞团交响乐团"
+  instruments:
+    - "竖琴"
+    - "弦乐"
+  link: "https://mp.weixin.qq.com/s/0dDONsY4rZ_jyFHkoGN01A"
+
 - id: "20261115-beijing-zhengxiyanyuan-shangjingya-guzheng"
   date: "2026-11-15"
   city: "北京"

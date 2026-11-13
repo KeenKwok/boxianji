@@ -1,3 +1,17 @@
+- id: "20261121-beijing-hehezhimei-jiwei-zhengensemble"
+  date: "2026-11-21"
+  city: "北京"
+  title: "和合之美——吉炜与筝乐团专场音乐会"
+  performers:
+    - "吉炜"
+    - "吉炜筝乐团"
+    - "李舒婷"
+    - "栾景旭"
+  instruments:
+    - "古筝"
+    - "钢琴"
+  link: "https://mp.weixin.qq.com/s/AA825dWJFKfzKxVPFZb5Vg"
+
 - id: "20261118-beijing-xibanyagita-fanshilong-guitar-solo"
   date: "2026-11-18"
   city: "北京"

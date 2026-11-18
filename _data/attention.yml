@@ -1,3 +1,13 @@
+- id: "20261121-taipei-kanahi-yamashita-guitar-recital"
+  date: "2026-11-21"
+  city: "台北"
+  title: "山下愛陽吉他獨奏會｜獻給巴赫的禮讚"
+  performers:
+    - "山下愛陽"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/DaNpuI0_YoEUOexPImrxYA"
+
 - id: "20261128-wuhan-shiguangdezhehen-yuyuan-kuangjunhong-flute-guitar"
   date: "2026-11-28"
   city: "武汉"

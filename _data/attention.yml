@@ -1,3 +1,23 @@
+- id: "20261123-guangzhou-fanshilong-classical-guitar-recital"
+  date: "2026-11-23"
+  city: "广州"
+  title: "范世龙古典吉他独奏音乐会"
+  performers:
+    - "范世龙"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/9dbg9KX7YIZ-QclA0TySDQ"
+
+- id: "20261124-guangzhou-fanshilong-classical-guitar-masterclass"
+  date: "2026-11-24"
+  city: "广州"
+  title: "范世龙古典吉他大师课"
+  performers:
+    - "范世龙"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/9dbg9KX7YIZ-QclA0TySDQ"
+
 - id: "20261121-taipei-kanahi-yamashita-guitar-recital"
   date: "2026-11-21"
   city: "台北"

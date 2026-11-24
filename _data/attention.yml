@@ -1,3 +1,33 @@
+- id: "20261209-guangzhou-desiderio-italian-opera-guitar"
+  date: "2026-12-09"
+  city: "广州"
+  title: "吉他吟唱的意大利咏叹调 Aniello Desiderio（阿涅洛·德西德里奥）古典吉他音乐会"
+  performers:
+    - "阿涅洛·德西德里奥"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/GNbgevkRL1z3uJgdI5m8-Q"
+
+- id: "20261206-shanghai-desiderio-italian-opera-guitar"
+  date: "2026-12-06"
+  city: "上海"
+  title: "吉他吟唱的意大利咏叹调 Aniello Desiderio（阿涅洛·德西德里奥）古典吉他音乐会"
+  performers:
+    - "阿涅洛·德西德里奥"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/GNbgevkRL1z3uJgdI5m8-Q"
+
+- id: "20261204-beijing-desiderio-italian-opera-guitar"
+  date: "2026-12-04"
+  city: "北京"
+  title: "吉他吟唱的意大利咏叹调 Aniello Desiderio（阿涅洛·德西德里奥）古典吉他音乐会"
+  performers:
+    - "阿涅洛·德西德里奥"
+  instruments:
+    - "吉他"
+  link: "https://mp.weixin.qq.com/s/GNbgevkRL1z3uJgdI5m8-Q"
+
 - id: "20261123-guangzhou-fanshilong-classical-guitar-recital"
   date: "2026-11-23"
   city: "广州"
